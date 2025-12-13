@@ -20,11 +20,11 @@
       </div>
 
       <nav class="nav-links" aria-label="Primary">
-        <a class="t" data-en="Services" data-ru="Услуги">Services</a>
-        <a class="t" data-en="Portfolio" data-ru="Портфолио">Portfolio</a>
-        <a class="t" data-en="About" data-ru="О мастере">About</a>
-        <a class="t" data-en="Contact" data-ru="Контакты">Contact</a>
-        <a class="btn t"  href="#booking" data-en="Book Now" data-ru="Записаться">Book Now</a>
+        <a class="t" href="#services" data-en="Services" data-ru="Услуги">Services</a>
+        <a class="t" href="#portfolio" data-en="Portfolio" data-ru="Портфолио">Portfolio</a>
+        <a class="t" href="#about" data-en="About" data-ru="О мастере">About</a>
+        <a class="t" href="#contact" data-en="Contact" data-ru="Контакты">Contact</a>
+        <a class="btn t" href="#booking" data-en="Book Now" data-ru="Записаться">Book Now</a>
         
         <!-- language switcher -->
         <div class="lang-switch" id="langSwitch">
@@ -32,6 +32,11 @@
             <span data-lang="ru">RU</span>
         </div>  
       </nav>
+          <!-- mobile language dropdown -->
+      <select id="mobileLang" class="mobile-lang" style="display:none;">
+        <option value="en">EN</option>
+        <option value="ru">RU</option>
+      </select>
       <!-- small-screen book CTA -->
       <a class="btn" href="#booking" style="display:none" id="mobileBook">Book</a>
     </div>
@@ -44,7 +49,7 @@
         <div class="hero-inner">  
           <div class="hero-copy">
             <h1 id="hero-title">Your Style, Reimagined</h1>
-            <p class="lead">Anna — Master stylist & color specialist. Modern cuts, bespoke color, and nourishing scalp treatments in Bay Point.</p>
+            <p class="lead t" data-en="Anna — Master stylist & color specialist. Modern cuts, bespoke color, and nourishing scalp treatments in Bay Area." data-ru="Анна — мастер-стилист и специалист по окрашиванию волос. Современные стрижки, индивидуальный подбор цвета и питательные процедуры для кожи головы в Bay Area.">Anna — Master stylist & color specialist. Modern cuts, bespoke color, and nourishing scalp treatments in Bay Area.</p>
             <div style="display:flex; gap:12px; align-items:center;">
               <a class="btn" href="#booking">Book Now</a>
               <a class="btn-ghost" href="#gallery">View Portfolio</a>
@@ -54,7 +59,7 @@
 
           <div class="hero-photo" aria-hidden="true">
             <!-- Replace this with a hero photo exported from Instagram -->
-            <img src="/assets/hero.jpg" alt="Anna at work — hero image">
+            <img src="assets/hero.jpg" alt="Anna at work — hero image">
           </div>
         </div>
       </section>
@@ -142,7 +147,12 @@
         <h2 id="gallery-title">Portfolio</h2>
         <p class="t" data-en="A selection of recent work. See more in Instagram" data-ru="Примеры работ. Больше примеров вы можете посмотреть в Инстарграм экаунте" style="color:var(--muted); margin-top:6px">A selection of recent work. See more in Instagram</p>
 
-          <div class="gallery" id="gallery"></div>
+          <!-- <div class="gallery" id="gallery"></div> -->
+          <div class="gallery-wrapper">
+            <button class="gallery-arrow left" id="galleryPrev">❮</button>
+            <div class="gallery gallery-row" id="gallery"></div>
+            <button class="gallery-arrow right" id="galleryNext">❯</button>
+          </div>
 
           <!-- Lightbox viewer -->
           <div id="lightbox" class="lightbox hidden">
@@ -153,13 +163,11 @@
           </div>
       </section>
 
-
-
       <!-- ABOUT -->
       <section id="about" aria-labelledby="about-title">
         <h2 id="about-title">Meet Anna</h2>
         <div class="about" style="margin-top:12px">
-          <img src="/assets/anna-portrait.jpg" alt="Anna hairstylist portrait">
+          <img src="assets/anna-portrait.jpg" alt="Anna hairstylist portrait">
           <div>
             <h3>Anna — Master Stylist & Color Specialist</h3>
             <p style="color:var(--muted)">Anna specializes in modern balayage, bespoke color, and scalp-nourishing treatments. With X years of experience and a passion for precision, she creates looks that fit each client's personality and lifestyle.</p>
