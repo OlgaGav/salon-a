@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Анна — Hair Studio A</title>
+    <meta
+      name="description"
+      content="Анна — мастер-стилист и колорист. Стрижки, окрашивание, уход за волосами. Instagram @anna_hairstylist_ba"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="alternate" hreflang="ru" href="/ru.html" />
+    <link rel="alternate" hreflang="en" href="/" />
+  </head>
+  <body>
+    <header>
+      <div class="container nav">
+        <div class="logo">
+          <img
+            src="assets/studioA_logo.png"
+            alt="Логотип Анны"
+            style="width:44px;height:44px;border-radius:8px;object-fit:cover;"
+          />
+          <div>
+            <div style="font-weight: 800">
+              Анна — Hair Studio A / Pleasant Hill
+            </div>
+            <div style="font-size: 12px; color: var(--muted)">
+              Мастер-стилист и колорист
+            </div>
+          </div>
+        </div>
+
+        <nav class="nav-links" aria-label="Primary">
+          <a href="#services">Услуги</a>
+          <a href="#portfolio">Портфолио</a>
+          <a href="#about">Обо мне</a>
+          <a href="#contact">Контакты</a>
+          <a class="btn" href="#booking">Записаться</a>
+
+          <div class="lang-switch" id="langSwitch">
+            <a href="/">EN</a> | <a href="/ru.html" class="active">RU</a>
+          </div>
+        </nav>
+
+        <select class="mobile-lang" id="mobileLang" style="display: none">
+          <option value="/">EN</option>
+          <option value="/ru.html" selected>RU</option>
+        </select>
+
+        <a class="btn" href="#booking" style="display: none" id="mobileBook">
+          Запись
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <!-- ABOUT -->
+        <section id="about" aria-labelledby="about-title">
+          <h2 id="about-title">Познакомьтесь с Анной</h2>
+          <div class="about" style="margin-top: 12px">
+            <img
+              src="assets/anna-portrait.jpg"
+              alt="Портрет Анны — парикмахер"
+            />
+            <div>
+              <h3>Анна — мастер-стилист и колорист</h3>
+              <p style="color: var(--muted)">
+                Анна специализируется на современном балаяже, индивидуальном
+                окрашивании и уходе за кожей головы. Более 15 лет опыта и
+                внимание к деталям позволяют создавать образы, идеально
+                подходящие стилю жизни и характеру клиента.
+              </p>
+
+              <div class="instagram-cta">
+                <a
+                  href="https://www.instagram.com/anna_hairstylist_ba"
+                  target="_blank"
+                  rel="noopener"
+                  class="instagram-btn"
+                  aria-label="Instagram Анны"
+                >
+                  <svg class="ig-icon" aria-hidden="true">
+                    <use
+                      href="/assets/icons.svg#icon-instagram"
+                      xlink:href="/assets/icons.svg#icon-instagram"
+                    ></use>
+                  </svg>
+                  <span class="instagram-text">
+                    Подписывайтесь в Instagram
+                    <strong>@anna_hairstylist_ba</strong>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- CONTACT & BOOKING -->
+        <section id="contact" aria-labelledby="contact-title">
+          <h2 id="contact-title">Контакты и запись</h2>
+
+          <div
+            style="display:flex;gap:20px;align-items:flex-start;margin-top:14px;flex-wrap:wrap;"
+          >
+            <div style="flex:1;min-width:260px" class="card">
+              <h4>Адрес</h4>
+              <p style="color: var(--muted)">
+                2255 Contra Costa Blvd, Suite 312<br />
+                Pleasant Hill, CA 94523
+              </p>
+
+              <h4 style="margin-top: 12px">Часы работы</h4>
+              <p style="color: var(--muted)">
+                Вт–Пт: 10:00–19:00<br />
+                Сб: 9:00–17:00<br />
+                Вс–Пн: выходной
+              </p>
+
+              <p style="margin-top: 8px">
+                <a class="btn" href="#booking">Записаться</a>
+              </p>
+            </div>
+
+            <div style="flex:1;min-width:260px" class="card">
+              <h4 id="booking">Запись на приём</h4>
+              <p style="color: var(--muted)">
+                Онлайн-запись в разпаботке. Что бы записатьсяпожалуйста, напишите сообщение
+                в Instagram.
+              </p>
+              <p style="margin-top: 10px; color: var(--muted)">
+                Instagram:
+                <svg class="ig-icon" aria-hidden="true">
+                    <use
+                        href="/assets/icons.svg#icon-instagram"
+                        xlink:href="/assets/icons.svg#icon-instagram"
+                    ></use>
+                </svg>
+                <a
+                  href="https://www.instagram.com/anna_hairstylist_ba"
+                  target="_blank"
+                  class="instagram-link"
+                  >anna_hairstylist_ba</a
+                >
+              </p>
+            </div>
+          </div>
+
+        </section>
+
+        <!-- SERVICES -->
+        <section id="services" aria-labelledby="services-title">
+          <h2 id="services-title">Услуги и цены</h2>
+          <p style="color: var(--muted); margin-top: 6px">
+            Прозрачное ценообразование. Продолжительность и точная стоимость
+            зависят от длины волос и сложности работы и уточняются на
+            консультации.
+          </p>
+                    <div class="grid-3" style="margin-top: 18px">
+            <!-- Haircuts & Styling -->
+            <div class="card service-category">
+              <h3>Стрижки и укладки</h3>
+
+              <ul class="price-list">
+                <li>Женская стрижка<strong>$75–$95</strong></li>
+                <li>Мужская стрижка<strong>$45–$55</strong></li>
+                <li>Boost Up (прикорневой объём)<strong>$150</strong></li>
+                <li>Причёска / укладка<strong>$150–$300</strong></li>
+                <li>Уход за волосами<strong>$140–$350</strong></li>
+              </ul>
+
+              <div style="margin-top: 12px">
+                <a class="btn" href="#booking">Записаться на стрижку</a>
+              </div>
+            </div>
+
+            <!-- Coloring -->
+            <div class="card service-category">
+              <h3>Окрашивание</h3>
+
+              <ul class="price-list">
+                <li>Окрашивание в один тон<strong>$150–$250</strong></li>
+                <li>Окрашивание корней<strong>$90–$200</strong></li>
+                <li>
+                  Мелирование / Балаяж / AirTouch<strong>$220–$450</strong>
+                </li>
+                <li>
+                  Частичный AirTouch / мелирование<strong>$270–$370</strong>
+                </li>
+                <li>Смывка цвета<strong>$150–$750</strong></li>
+              </ul>
+
+              <div style="margin-top: 12px">
+                <a class="btn" href="#booking">Записаться на окрашивание</a>
+              </div>
+            </div>
+
+            <!-- Scalp & Treatments -->
+            <div class="card service-category">
+              <h3>Кожа головы и уход</h3>
+
+              <ul class="price-list">
+                <li>Консультация и диагностика кожи головы<strong>$60</strong></li>
+                <li>Глубокое очищение кожи головы<strong>$60</strong></li>
+                <li>Уход за кожей головы<strong>$80</strong></li>
+                <li>Детокс для волос<strong>$100–$120</strong></li>
+                <li>Набор средств + консультация<strong>$200–$250</strong></li>
+              </ul>
+
+              <div style="margin-top: 12px">
+                <a class="btn" href="#booking">Записаться на уход</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- GALLERY -->
+        <section id="portfolio" aria-labelledby="gallery-title">
+          <h2 id="gallery-title">Портфолио</h2>
+          <p style="color: var(--muted); margin-top: 6px">
+            Примеры последних работ. Смотрите больше — в Instagram 
+            <svg class="ig-icon" aria-hidden="true">
+              <use
+                href="/assets/icons.svg#icon-instagram"
+                xlink:href="/assets/icons.svg#icon-instagram"
+              ></use>
+            </svg>
+            <a
+            href="https://www.instagram.com/anna_hairstylist_ba"
+            target="_blank"
+            class="instagram-link"
+            >anna_hairstylist_ba</a
+          >.
+          </p>
+          <div class="gallery-wrapper">
+            <button class="gallery-arrow left" id="galleryPrev">❮</button>
+            <div class="gallery gallery-row" id="gallery"></div>
+            <button class="gallery-arrow right" id="galleryNext">❯</button>
+          </div>
+
+          <!-- Lightbox viewer -->
+          <div id="lightbox" class="lightbox hidden">
+            <button class="close-btn" id="lightbox-close">✕</button>
+            <button class="nav-btn prev" id="lightbox-prev">❮</button>
+            <img id="lightbox-img" alt="" />
+            <button class="nav-btn next" id="lightbox-next">❯</button>
+          </div>
+        </section>
+        <div style="margin-top: 18px" class="card">
+            <h4>Как нас найти</h4>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3941.1240560877!2d-122.06336202338169!3d37.94574247194286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808561388163799d%3A0xa57fb9c33117e73e!2s2255%20Contra%20Costa%20Blvd%2C%20Pleasant%20Hill%2C%20CA%2094523!5e1!3m2!1sen!2sus!4v1765323120171!5m2!1sen!2sus"
+              width="600"
+              height="450"
+              style="border:0"
+              loading="lazy"
+            ></iframe>
+        </div>
+      </div>
+
+    </main>
+
+    <footer>
+      <div
+        class="container"
+        style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;"
+      >
+        <div>© <strong>Anna Hairstylist</strong> — Все права защищены</div>
+        <div style="color: var(--muted)">
+          Instagram:
+          <svg class="ig-icon" aria-hidden="true">
+              <use
+                  href="/assets/icons.svg#icon-instagram"
+                  xlink:href="/assets/icons.svg#icon-instagram"
+              ></use>
+          </svg>
+          <a
+            href="https://www.instagram.com/anna_hairstylist_ba"
+            target="_blank"
+            class="instagram-link"
+            >anna_hairstylist_ba</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
