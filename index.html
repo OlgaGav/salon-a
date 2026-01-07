@@ -1,153 +1,242 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Anna - Hair Studio A</title>
-  <meta name="description" content="Anna — Master stylist & color specialist. Book haircuts, color, treatments. Follow on Instagram @anna_hairstylist_ba" />
-   <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-
-  <header>
-    <div class="container nav">
-      <div class="logo">
-        <img src="assets/studioA_logo.png" alt="Anna logo" style="width:44px;height:44px;border-radius:8px;object-fit:cover;">
-        <div>
-          <div style="font-weight:800">Anna - Hair Studio A / Pleasant Hill</div>
-          <div style="font-size:12px;color:var(--muted)">Master Stylist & Colorist</div>
-        </div>
-      </div>
-
-      <nav class="nav-links" aria-label="Primary">
-        <a class="t" href="#services" data-en="Services" data-ru="Услуги">Services</a>
-        <a class="t" href="#portfolio" data-en="Portfolio" data-ru="Портфолио">Portfolio</a>
-        <a class="t" href="#about" data-en="About" data-ru="О мастере">About</a>
-        <a class="t" href="#contact" data-en="Contact" data-ru="Контакты">Contact</a>
-        <a class="btn t" href="#booking" data-en="Book Now" data-ru="Записаться">Book Now</a>
-        
-        <!-- language switcher -->
-        <div class="lang-switch" id="langSwitch">
-            <span data-lang="en" class="active">EN</span> |
-            <span data-lang="ru">RU</span>
-        </div>  
-      </nav>
-          <!-- mobile language dropdown -->
-      <select id="mobileLang" class="mobile-lang" style="display:none;">
-        <option value="en">EN</option>
-        <option value="ru">RU</option>
-      </select>
-      <!-- small-screen book CTA -->
-      <a class="btn" href="#booking" style="display:none" id="mobileBook">Book</a>
-    </div>
-  </header>
-
-  <main>
-    <div class="container">
-      <!-- HERO -->
-      <section class="hero" aria-labelledby="hero-title">
-        <div class="hero-inner">  
-          <div class="hero-copy">
-            <h1 id="hero-title">Your Style, Reimagined</h1>
-            <p class="lead t" data-en="Anna — Master stylist & color specialist. Modern cuts, bespoke color, and nourishing scalp treatments in Bay Area." data-ru="Анна — мастер-стилист и специалист по окрашиванию волос. Современные стрижки, индивидуальный подбор цвета и питательные процедуры для кожи головы в Bay Area.">Anna — Master stylist & color specialist. Modern cuts, bespoke color, and nourishing scalp treatments in Bay Area.</p>
-            <div style="display:flex; gap:12px; align-items:center;">
-              <a class="btn" href="#booking">Book Now</a>
-              <a class="btn-ghost" href="#gallery">View Portfolio</a>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Anna - Hair Studio A</title>
+    <meta
+      name="description"
+      content="Anna — Master stylist & color specialist. Book haircuts, color, treatments. Follow on Instagram @anna_hairstylist_ba"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="alternate" hreflang="ru" href="/ru.html" />
+    <link rel="alternate" hreflang="en" href="/" />
+  </head>
+  <body>
+    <header>
+      <div class="container nav">
+        <div class="logo">
+          <img
+            src="assets/studioA_logo.png"
+            alt="Anna logo"
+            style="
+              width: 44px;
+              height: 44px;
+              border-radius: 8px;
+              object-fit: cover;
+            "
+          />
+          <div>
+            <div style="font-weight: 800">
+              Anna - Hair Studio A / Pleasant Hill
             </div>
-            <p style="margin-top:16px;font-size:14px;color:var(--muted)">Follow my daily work on <a href="https://www.instagram.com/anna_hairstylist_ba" target="_blank" rel="noopener">Instagram @anna_hairstylist_ba</a></p>
-          </div>
-
-          <div class="hero-photo" aria-hidden="true">
-            <!-- Replace this with a hero photo exported from Instagram -->
-            <img src="assets/hero.jpg" alt="Anna at work — hero image">
+            <div style="font-size: 12px; color: var(--muted)">
+              Master Stylist & Colorist
+            </div>
           </div>
         </div>
-      </section>
 
-      <!-- SERVICES & PRICING -->
-<section id="services" aria-labelledby="services-title">
-  <h2 id="services-title">
-    <span class="t" data-en="Services & Prices" data-ru="Услуги и цены">Services & Prices</span>
-  </h2>
+        <nav class="nav-links" aria-label="Primary">
+          <a href="#services">Services</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+          <a class="btn" href="#booking">Book Now</a>
 
-  <p style="color:var(--muted); margin-top:6px">
-    <span class="t"
-      data-en="Transparent pricing so you can choose the right service. Duration and exact price depends on hair length and complexity — final price confirmed during consultation."
-      data-ru="Прозрачные цены — вы можете выбрать подходящую услугу. Длительность и точная стоимость зависят от длины и типа волос — финальная цена подтверждается на консультации."
-    >
-      Transparent pricing so you can choose the right service. Duration and exact price depends on hair length and complexity — final price confirmed during consultation.
-    </span>
-  </p>
-
-  <div class="grid-3" style="margin-top:18px;">
-
-    <!-- Haircuts & Styling -->
-    <div class="card service-category">
-      <h3>
-        <span class="t" data-en="Haircuts & Styling" data-ru="Стрижки и укладки">Haircuts & Styling</span>
-      </h3>
-
-      <ul class="price-list">
-        <li><span class="t" data-en="Women's Hair Cut" data-ru="Женская стрижка">Women's Hair Cut</span> <strong>$75–$95</strong></li>
-        <li><span class="t" data-en="Men's Hair Cut" data-ru="Мужская стрижка">Men's Hair Cut</span> <strong>$45–$55</strong></li>
-        <li><span class="t" data-en="Boost Up (roots volume)" data-ru="Boost Up (объём корней)">Boost Up (roots volume)</span> <strong>$150</strong></li>
-        <li><span class="t" data-en="Hairstyle / Styling" data-ru="Прическа / Укладка">Hairstyle / Styling</span> <strong>$150–$300</strong></li>
-        <li><span class="t" data-en="Hair Treatment" data-ru="Уход для волос">Hair Treatment</span> <strong>$140–$350</strong></li>
-      </ul>
-
-      <div style="margin-top:12px">
-        <a class="btn t" data-en="Book a Cut" data-ru="Записаться на стрижку" href="#booking">Book a Cut</a>
+          <!-- language switcher -->
+          <div class="lang-switch" id="langSwitch">
+            <a href="/" class="active">EN</a> |
+            <a href="/ru.html">RU</a>
+          </div>
+        </nav>
+        <!-- mobile language dropdown -->
+        <select class="mobile-lang" id="mobileLang" style="display: none">
+          <option value="/">EN</option>
+          <option value="/ru.html">RU</option>
+        </select>
+        <!-- small-screen book CTA -->
+        <a class="btn" href="#booking" style="display: none" id="mobileBook"
+          >Book</a
+        >
       </div>
-    </div>
+    </header>
 
-    <!-- Coloring -->
-    <div class="card service-category">
-      <h3>
-        <span class="t" data-en="Coloring" data-ru="Окрашивание">Coloring</span>
-      </h3>
+    <main>
+      <div class="container">
+        <!-- ABOUT -->
+        <section id="about" aria-labelledby="about-title">
+          <h2 id="about-title">Meet Anna</h2>
+          <div class="about" style="margin-top: 12px">
+            <img
+              src="assets/anna-portrait.jpg"
+              alt="Anna hairstylist portrait"
+            />
+            <div>
+              <h3>Anna — Master Stylist & Color Specialist</h3>
+              <p style="color: var(--muted)">
+                Anna specializes in modern balayage, bespoke color, and
+                scalp-nourishing treatments. With 15 years of experience and a
+                passion for precision, she creates looks that fit each client's
+                personality and lifestyle.
+              </p>
+              <div class="instagram-cta">
+                <a
+                  href="https://www.instagram.com/anna_hairstylist_ba"
+                  target="_blank"
+                  rel="noopener"
+                  class="instagram-btn"
+                  aria-label="Visit Anna on Instagram"
+                >
+                  <svg class="ig-icon" aria-hidden="true">
+                    <use
+                      href="/assets/icons.svg#icon-instagram"
+                      xlink:href="/assets/icons.svg#icon-instagram"
+                    ></use>
+                  </svg>
+                  
+                  <span class="instagram-text">
+                    Follow on Instagram
+                    <strong>@anna_hairstylist_ba</strong>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- CONTACT & BOOKING -->
+        <section id="contact" aria-labelledby="contact-title">
+          <h2 id="contact-title">Contact & Booking</h2>
+          <div
+            style="
+              display: flex;
+              gap: 20px;
+              align-items: flex-start;
+              margin-top: 14px;
+              flex-wrap: wrap;
+            "
+          >
+            <div style="flex: 1; min-width: 260px" class="card">
+              <h4>Location</h4>
+              <p style="color: var(--muted)">
+                2255 Contra Costa Blvd, Suite 312<br />Pleasant Hill, CA 94523
+              </p>
+              <h4>Hours</h4>
+              <p style="color: var(--muted)">
+                Tue–Fri: 10:00–19:00<br />Sat: 9:00–17:00<br />Sun–Mon: Closed
+              </p>
 
-      <ul class="price-list">
-        <li><span class="t" data-en="All-over Color" data-ru="Полное окрашивание">All-over Color</span> <strong>$150–$250</strong></li>
-        <li><span class="t" data-en="Root Retouch" data-ru="Подкрашивание корней">Root Retouch</span> <strong>$90–$200</strong></li>
-        <li><span class="t" data-en="Highlights / Balayage / Air-Touch" data-ru="Мелирование / Балаяж / Air-Touch">Highlights / Balayage / Air-Touch</span> <strong>$220–$450</strong></li>
-        <li><span class="t" data-en="Partial Air-Touch / Highlights" data-ru="Частичный Air-Touch / мелирование">Partial Air-Touch / Highlights</span> <strong>$270–$370</strong></li>
-        <li><span class="t" data-en="Color Remove" data-ru="Смывка цвета">Color Remove</span> <strong>$150–$750</strong></li>
-      </ul>
+              <!-- <p > -->
+              <a class="btn" href="#booking">Book Now</a>
+              <!-- </p> -->
+            </div>
 
-      <div style="margin-top:12px">
-        <a class="btn t" data-en="Book Color" data-ru="Записаться на окрашивание" href="#booking">Book Color</a>
-      </div>
-    </div>
+            <div style="flex: 1; min-width: 260px" class="card">
+              <h4 id="booking">
+                Book Your Appointment
+              </h4>
+              <p style="color: var(--muted)">
+                At this moment we don't support online booking. Please send
+                direct message in instagram to schedule your appointment.
+              </p>
+              <p style="margin-top: 10px; color: var(--muted)">
+                Message on Instagram:
+                <svg class="ig-icon" aria-hidden="true">
+                  <use
+                    href="/assets/icons.svg#icon-instagram"
+                    xlink:href="/assets/icons.svg#icon-instagram"
+                  ></use>
+                </svg>
+                <a
+                  class="instagram-link"
+                  href="https://www.instagram.com/anna_hairstylist_ba"
+                  target="_blank"
+                  >anna_hairstylist_ba</a
+                >
+              </p>
+            </div>
+          </div>
+        </section>
 
+        <!-- SERVICES & PRICING -->
+        <section id="services" aria-labelledby="services-title">
+          <h2 id="services-title">Services & Prices</h2>
+          <p style="color: var(--muted); margin-top: 6px">
+            Transparent pricing so you can choose the right service. Duration
+            and exact price depends on hair length and complexity — final price
+            confirmed during consultation.
+          </p>
 
-    <!-- Scalp & Treatments -->
-    <div class="card service-category">
-      <h3>
-        <span class="t" data-en="Scalp & Treatments" data-ru="Кожа головы и уходы">Scalp & Treatments</span>
-      </h3>
+          <div class="grid-3" style="margin-top: 18px">
+            <!-- Haircuts & Styling -->
+            <div class="card service-category">
+              <h3>Haircuts & Styling</h3>
 
-      <ul class="price-list">
-        <li><span class="t" data-en="Consultation & Scalp Diagnosis" data-ru="Консультация и диагностика кожи головы">Consultation & Scalp Diagnosis</span> <strong>$60</strong></li>
-        <li><span class="t" data-en="Scalp Peeling" data-ru="Пилинг кожи головы">Scalp Peeling</span> <strong>$60</strong></li>
-        <li><span class="t" data-en="Scalp Treatment" data-ru="Уход для кожи головы">Scalp Treatment</span> <strong>$80</strong></li>
-        <li><span class="t" data-en="Hair Detox" data-ru="Детокс волос">Hair Detox</span> <strong>$100–$120</strong></li>
-        <li><span class="t" data-en="Product Set + Consultation" data-ru="Набор продукции + консультация">Product Set + Consultation</span> <strong>$200–$250</strong></li>
-      </ul>
+              <ul class="price-list">
+                <li>Women's Hair Cut<strong>$75–$95</strong></li>
+                <li>Men's Hair Cut<strong>$45–$55</strong></li>
+                <li>Boost Up (roots volume)<strong>$150</strong></li>
+                <li>Hairstyle / Styling<strong>$150–$300</strong></li>
+                <li>Hair Treatment<strong>$140–$350</strong></li>
+              </ul>
 
-      <div style="margin-top:12px">
-        <a class="btn t" data-en="Book Treatment" data-ru="Записаться на уход" href="#booking">Book Treatment</a>
-      </div>
-    </div>
+              <div style="margin-top: 12px">
+                <a class="btn" href="#booking">Book a Cut</a>
+              </div>
+            </div>
 
-  </div>
-</section>
+            <!-- Coloring -->
+            <div class="card service-category">
+              <h3>Coloring</h3>
 
-      <!-- GALLERY -->
-      <section id="gallery-section" aria-labelledby="gallery-title">
-        <h2 id="gallery-title">Portfolio</h2>
-        <p class="t" data-en="A selection of recent work. See more in Instagram" data-ru="Примеры работ. Больше примеров вы можете посмотреть в Инстарграм экаунте" style="color:var(--muted); margin-top:6px">A selection of recent work. See more in Instagram</p>
+              <ul class="price-list">
+                <li>All-over Color<strong>$150–$250</strong></li>
+                <li>Root Retouch<strong>$90–$200</strong></li>
+                <li>
+                  Highlights / Balayage / Air-Touch<strong>$220–$450</strong>
+                </li>
+                <li>
+                  Partial Air-Touch / Highlights<strong>$270–$370</strong>
+                </li>
+                <li>Color Remove<strong>$150–$750</strong></li>
+              </ul>
 
-          <!-- <div class="gallery" id="gallery"></div> -->
+              <div style="margin-top: 12px">
+                <a class="btn" href="#booking">Book Color</a>
+              </div>
+            </div>
+
+            <!-- Scalp & Treatments -->
+            <div class="card service-category">
+              <h3>Scalp & Treatments</h3>
+
+              <ul class="price-list">
+                <li>Consultation & Scalp Diagnosis<strong>$60</strong></li>
+                <li>Scalp Peeling<strong>$60</strong></li>
+                <li>Scalp Treatment<strong>$80</strong></li>
+                <li>Hair Detox<strong>$100–$120</strong></li>
+                <li>Product Set + Consultation<strong>$200–$250</strong></li>
+              </ul>
+
+              <div style="margin-top: 12px">
+                <a class="btn" href="#booking">Book Treatment</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- GALLERY -->
+        <section id="portfolio" aria-labelledby="gallery-title">
+          <h2 id="gallery-title">Portfolio</h2>
+          <p style="color: var(--muted); margin-top: 6px">
+            A selection of recent work. See more in Instagram
+            <a
+              class="instagram-link"
+              href="https://www.instagram.com/anna_hairstylist_ba"
+              target="_blank"
+              >@anna_hairstylist_ba</a
+            >
+          </p>
+
           <div class="gallery-wrapper">
             <button class="gallery-arrow left" id="galleryPrev">❮</button>
             <div class="gallery gallery-row" id="gallery"></div>
@@ -158,66 +247,58 @@
           <div id="lightbox" class="lightbox hidden">
             <button class="close-btn" id="lightbox-close">✕</button>
             <button class="nav-btn prev" id="lightbox-prev">❮</button>
-            <img id="lightbox-img" alt="">
+            <img id="lightbox-img" alt="" />
             <button class="nav-btn next" id="lightbox-next">❯</button>
           </div>
-      </section>
-
-      <!-- ABOUT -->
-      <section id="about" aria-labelledby="about-title">
-        <h2 id="about-title">Meet Anna</h2>
-        <div class="about" style="margin-top:12px">
-          <img src="assets/anna-portrait.jpg" alt="Anna hairstylist portrait">
-          <div>
-            <h3>Anna — Master Stylist & Color Specialist</h3>
-            <p style="color:var(--muted)">Anna specializes in modern balayage, bespoke color, and scalp-nourishing treatments. With X years of experience and a passion for precision, she creates looks that fit each client's personality and lifestyle.</p>
-            <p style="margin-top:8px"><a href="#booking" class="btn">Book with Anna</a></p>
-          </div>
-        </div>
-      </section>
-
-      <!-- CONTACT & BOOKING -->
-      <section id="contact" aria-labelledby="contact-title">
-        <h2 id="contact-title">Contact & Booking</h2>
-        <div style="display:flex; gap:20px; align-items:flex-start; margin-top:14px; flex-wrap:wrap;">
-          <div style="flex:1; min-width:260px;" class="card">
-            <h4>Location</h4>
-            <p style="color:var(--muted)">2255 Contra Costa Blvd, Suite 312<br>Pleasant Hill, CA 94523</p>
-            <h4 style="margin-top:12px">Hours</h4>
-            <p style="color:var(--muted)">Tue–Fri: 10:00–19:00<br>Sat: 9:00–17:00<br>Sun–Mon: Closed</p>
-            <h4 style="margin-top:12px">Phone</h4>
-            <p><a href="tel:+11234567890">+1 (925) 532-2992</a></p>
-            <p style="margin-top:8px"><a class="btn" href="#booking">Book Now</a></p>
-          </div>
-
-          <div style="flex:1; min-width:260px;" class="card">
-            <h4 class="t" data-en="Book your appointment" data-ru="Запись на прием" id="booking">Book Your Appointment</h4>
-            <p class="t" data-en="Please send direct message in instagram" data-ru="Запись на прием можно написав в личные соообщения в инстаграме" style="color:var(--muted)">
-              At this moment we don't support online booking. Please send direct message in instagram or text by phone</p>
-            <p style="margin-top:10px;color:var(--muted)">Message on Instagram: <a href="https://www.instagram.com/anna_hairstylist_ba" target="_blank">@anna_hairstylist_ba</a></p>
-          </div>
-        </div>
-
-        <!-- simple embedded map placeholder -->
-        <div style="margin-top:18px" class="card">
+        </section>
+        <!-- embedded map placeholder -->
+        <div style="margin-top: 18px" class="card">
           <h4>Find Us</h4>
-          <div style="border-radius:10px;overflow:hidden;background:#eee;display:flex;align-items:center;justify-content:center;color:var(--muted);"></div>
-            <span><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3941.1240560877!2d-122.06336202338169!3d37.94574247194286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808561388163799d%3A0xa57fb9c33117e73e!2s2255%20Contra%20Costa%20Blvd%2C%20Pleasant%20Hill%2C%20CA%2094523!5e1!3m2!1sen!2sus!4v1765323120171!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></span>
+            <span
+              ><iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3941.1240560877!2d-122.06336202338169!3d37.94574247194286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808561388163799d%3A0xa57fb9c33117e73e!2s2255%20Contra%20Costa%20Blvd%2C%20Pleasant%20Hill%2C%20CA%2094523!5e1!3m2!1sen!2sus!4v1765323120171!5m2!1sen!2sus"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe
+            ></span>
           </div>
+      </div>
+    </main>
+
+    <footer>
+      <div
+        class="container"
+        style="
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          gap: 12px;
+        "
+      >
+        <div>© <strong>Anna Hairstylist</strong> — All rights reserved</div>
+        <div style="color: var(--muted)">
+          Follow on
+          <svg class="ig-icon" aria-hidden="true">
+            <use
+              href="/assets/icons.svg#icon-instagram"
+              xlink:href="/assets/icons.svg#icon-instagram"
+            ></use>
+          </svg>
+          <a
+            class="instagram-link"
+            href="https://www.instagram.com/anna_hairstylist_ba"
+            target="_blank"
+            >anna_hairstylist_ba</a
+          >
         </div>
-      </section>
+      </div>
+    </footer>
 
-    </div>
-  </main>
-
-  <footer>
-    <div class="container" style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;">
-      <div>© <strong>Anna Hairstylist</strong> — All rights reserved</div>
-      <div style="color:var(--muted)">Follow on <a href="https://www.instagram.com/anna_hairstylist_ba" target="_blank">@anna_hairstylist_ba</a></div>
-    </div>
-  </footer>
-
-      <script src="script.js"></script>
-
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
