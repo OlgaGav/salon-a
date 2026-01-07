@@ -247,16 +247,36 @@
             <button class="nav-btn next" id="lightbox-next">❯</button>
           </div>
         </section>
-        <div style="margin-top: 18px" class="card">
-            <h4>Как нас найти</h4>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3941.1240560877!2d-122.06336202338169!3d37.94574247194286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808561388163799d%3A0xa57fb9c33117e73e!2s2255%20Contra%20Costa%20Blvd%2C%20Pleasant%20Hill%2C%20CA%2094523!5e1!3m2!1sen!2sus!4v1765323120171!5m2!1sen!2sus"
-              width="600"
-              height="450"
-              style="border:0"
-              loading="lazy"
-            ></iframe>
-        </div>
+
+        <section id="location">
+          <div class="card map-card">
+            <h4>Салон расположен по адресу</h4>
+
+            <!-- Desktop map -->
+            <div class="map-embed desktop-map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3941.1240560877!2d-122.06336202338169!3d37.94574247194286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808561388163799d%3A0xa57fb9c33117e73e!2s2255%20Contra%20Costa%20Blvd%2C%20Pleasant%20Hill%2C%20CA%2094523!5e1!3m2!1sen!2sus!4v1765323120171!5m2!1sen!2sus"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <!-- Mobile map-->
+            <div class="map-mobile">
+              <p>📍 2255 Contra Costa Blvd, Pleasant Hill, CA 94523</p>
+
+              <a
+                href="https://maps.google.com/?q=2255+Contra+Costa+Blvd+Pleasant+Hill+CA+94523"
+                target="_blank"
+                rel="noopener"
+                class="map-button"
+              >
+                Открыть в Google Maps
+              </a>
+            </div>
+          </div>
+        </section>
+
       </div>
 
     </main>
