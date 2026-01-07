@@ -9,15 +9,15 @@
       content="Anna — Master stylist & color specialist. Book haircuts, color, treatments. Follow on Instagram @anna_hairstylist_ba"
     />
     <link rel="stylesheet" href="style.css" />
-    <link rel="alternate" hreflang="ru" href="/ru.html" />
-    <link rel="alternate" hreflang="en" href="/" />
+    <link rel="alternate" hreflang="ru" href="./ru.html" />
+    <link rel="alternate" hreflang="en" href="./" />
   </head>
   <body>
     <header>
       <div class="container nav">
-        <div class="logo">
+        <a class="logo" href="./">
           <img
-            src="assets/studioA_logo.png"
+            src="./assets/studioA_logo.png"
             alt="Anna logo"
             style="
               width: 44px;
@@ -34,7 +34,7 @@
               Master Stylist & Colorist
             </div>
           </div>
-        </div>
+        </a>
 
         <nav class="nav-links" aria-label="Primary">
           <a href="#services">Services</a>
@@ -45,14 +45,14 @@
 
           <!-- language switcher -->
           <div class="lang-switch" id="langSwitch">
-            <a href="/" class="active">EN</a> |
-            <a href="/ru.html">RU</a>
+            <a href="./" class="active">EN</a> |
+            <a href="./ru.html">RU</a>
           </div>
         </nav>
         <!-- mobile language dropdown -->
         <select class="mobile-lang" id="mobileLang" style="display: none">
-          <option value="/">EN</option>
-          <option value="/ru.html">RU</option>
+          <option value="./">EN</option>
+          <option value="./ru.html">RU</option>
         </select>
         <!-- small-screen book CTA -->
         <a class="btn" href="#booking" style="display: none" id="mobileBook"
