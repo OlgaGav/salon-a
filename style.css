@@ -455,6 +455,14 @@ ul.price-list li.service-item {
   border-radius: 8px;
   font-size: 16px;
 }
+/* Logo link fix */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: inherit;       
+}
 
 /* responsive */
 @media (max-width: 900px) {
@@ -467,9 +475,7 @@ ul.price-list li.service-item {
   h1 {
     font-size: 28px;
   }
-  .hero-inner {
-    flex-direction: column;
-  }
+  
 }
 @media (max-width: 520px) {
   .nav-links {

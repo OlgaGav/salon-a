@@ -9,15 +9,15 @@
       content="Анна — мастер-стилист и колорист. Стрижки, окрашивание, уход за волосами. Instagram @anna_hairstylist_ba"
     />
     <link rel="stylesheet" href="style.css" />
-    <link rel="alternate" hreflang="ru" href="/ru.html" />
-    <link rel="alternate" hreflang="en" href="/" />
+    <link rel="alternate" hreflang="ru" href="./ru.html" />
+    <link rel="alternate" hreflang="en" href="./" />
   </head>
   <body>
     <header>
       <div class="container nav">
-        <div class="logo">
+        <a class="logo" href="./ru.html">
           <img
-            src="assets/studioA_logo.png"
+            src="./assets/studioA_logo.png"
             alt="Логотип Анны"
             style="width:44px;height:44px;border-radius:8px;object-fit:cover;"
           />
@@ -29,7 +29,7 @@
               Мастер-стилист и колорист
             </div>
           </div>
-        </div>
+        </a>
 
         <nav class="nav-links" aria-label="Primary">
           <a href="#services">Услуги</a>
@@ -39,13 +39,13 @@
           <a class="btn" href="#booking">Записаться</a>
 
           <div class="lang-switch" id="langSwitch">
-            <a href="/">EN</a> | <a href="/ru.html" class="active">RU</a>
+            <a href="./">EN</a> | <a href="./ru.html" class="active">RU</a>
           </div>
         </nav>
 
         <select class="mobile-lang" id="mobileLang" style="display: none">
-          <option value="/">EN</option>
-          <option value="/ru.html" selected>RU</option>
+          <option value="./">EN</option>
+          <option value="./ru.html" selected>RU</option>
         </select>
 
         <a class="btn" href="#booking" style="display: none" id="mobileBook">
