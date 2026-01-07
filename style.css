@@ -57,8 +57,6 @@ footer {
   border-top: 1px solid #f7f7f7;
 }
 
-
-
 .container {
   max-width: var(--maxw);
   margin: 0 auto;
@@ -121,7 +119,7 @@ ul.price-list {
   margin: 0;
 }
 ul.price-list li {
-  display: flex;
+  display: block;
   justify-content: space-between;
   padding: 8px 0;
   border-bottom: 1px dashed #eee;
@@ -232,6 +230,7 @@ ul.price-list li {
     display: none;
   }
 }
+
 /* little hover */
 .card:hover {
   transform: translateY(-6px);
@@ -339,7 +338,7 @@ ul.price-list li {
   }
 }
 
-
+/* Instagram related */
 
 .instagram-cta {
   margin-top: 16px;
@@ -386,4 +385,63 @@ ul.price-list li {
   font-weight: bold;
   fill: var(--accent);
   vertical-align: middle;
+}
+
+/* Services accordion */
+
+.service-item {
+  display: block; /* IMPORTANT */
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+  padding: 6px 0;
+}
+
+.service-toggle {
+  all: unset;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  font-weight: 500;
+  gap: 8px;
+}
+
+.service-toggle span {
+  padding-right: 10px;
+}
+
+.service-toggle strong {
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.service-toggle::after {
+  content: "▾";
+  font-size: 12px;
+  margin-left: 8px;
+  transition: transform 0.2s ease;
+}
+
+.service-item.open .service-toggle::after {
+  transform: rotate(180deg);
+}
+
+.service-desc {
+  display: none;
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.4;
+  margin-top: 6px;
+  margin-left: 2px;
+  padding-right: 22px;
+  max-width: 92%;
+}
+
+.service-item.open .service-desc {
+  display: block;
+}
+
+/* Fix accordion layout */
+ul.price-list li.service-item {
+  display: block;
 }

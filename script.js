@@ -1,41 +1,7 @@
-// LANGUAGE SWITCHER LOGIC
-// function setLanguage(lang) {
-//   document.querySelectorAll(".t").forEach((el) => {
-//     el.textContent = el.dataset[lang];
-//   });
-
-  // update desktop active styles
-  // document.querySelectorAll("#langSwitch span").forEach((span) => {
-  //   span.classList.toggle("active", span.dataset.lang === lang);
-  // });
-
-  // sync mobile dropdown
-//   document.getElementById("mobileLang").value = lang;
-
-//   localStorage.setItem("lang", lang);
-// }
-
-// Desktop click (EN/RU)
-// document.querySelectorAll("#langSwitch span").forEach((span) => {
-//   span.addEventListener("click", () => {
-//     setLanguage(span.dataset.lang);
-//   });
-// });
-
-// Mobile dropdown
-// document.getElementById("mobileLang").addEventListener("change", (e) => {
-//   setLanguage(e.target.value);
-// });
-
-// Load saved language
-// setLanguage(localStorage.getItem("lang") || "en");
-
 
 document.getElementById("mobileLang")?.addEventListener("change", (e) => {
   window.location.href = e.target.value;
 });
-
-
 
 // show mobile [Book] button for narrow screens
 function adaptMobile() {
@@ -131,4 +97,12 @@ galleryPrev.addEventListener("click", () => {
 
 galleryNext.addEventListener("click", () => {
   galleryEl.scrollBy({ left: 300, behavior: "smooth" });
+});
+
+// Services accordion functionality
+document.querySelectorAll(".service-toggle").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const item = btn.closest(".service-item");
+    item.classList.toggle("open");
+  });
 });
