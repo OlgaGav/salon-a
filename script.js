@@ -106,3 +106,36 @@ document.querySelectorAll(".service-toggle").forEach((btn) => {
     item.classList.toggle("open");
   });
 });
+
+// silder for reviews
+const track = document.querySelector(".reviews-track");
+const reviews = document.querySelectorAll(".review");
+let index = 0;
+
+function updateReview() {
+  track.style.transform = `translateX(-${index * 100}%)`;
+}
+
+document.querySelector(".next")?.addEventListener("click", () => {
+  index = (index + 1) % reviews.length;
+  updateReview();
+});
+
+document.querySelector(".prev")?.addEventListener("click", () => {
+  index = (index - 1 + reviews.length) % reviews.length;
+  updateReview();
+});
+
+// swipe functionality
+let startX = 0;
+
+track.addEventListener("touchstart", (e) => {
+  startX = e.touches[0].clientX;
+});
+
+track.addEventListener("touchend", (e) => {
+  const diff = startX - e.changedTouches[0].clientX;
+  if (diff > 50) index = Math.min(index + 1, reviews.length - 1);
+  if (diff < -50) index = Math.max(index - 1, 0);
+  updateReview();
+});
