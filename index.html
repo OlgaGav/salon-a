@@ -17,7 +17,7 @@
       <div class="container nav">
         <a class="logo" href="./">
           <img
-            src="./assets/studioA_logo.png"
+            src="./assets/logo.png"
             alt="Anna logo"
             style="
               width: 44px;
@@ -27,12 +27,7 @@
             "
           />
           <div>
-            <div style="font-weight: 800">
-              Anna - Hair Studio A / Pleasant Hill
-            </div>
-            <div style="font-size: 12px; color: var(--muted)">
-              Master Stylist & Colorist
-            </div>
+            <div style="font-weight: 800">Hair Studio A</div>
           </div>
         </a>
 
@@ -41,7 +36,7 @@
           <a href="#portfolio">Portfolio</a>
           <a href="#about">About</a>
           <a href="#contact">Contact</a>
-          <a class="btn" href="#booking">Book Now</a>
+          <!-- <a class="btn" href="#booking">Book Now</a> -->
 
           <!-- language switcher -->
           <div class="lang-switch" id="langSwitch">
@@ -55,155 +50,71 @@
           <option value="./ru.html">RU</option>
         </select>
         <!-- small-screen book CTA -->
-        <a class="btn" href="#booking" style="display: none" id="mobileBook"
+        <!-- <a class="btn" href="#booking" style="display: none" id="mobileBook"
           >Book</a
+        > -->
+        <a
+          class="btn"
+          id="mobileBook"
+          href="https://app.squareup.com/appointments/book/9jg4j8mw5s47gy/LVHKNWGX17XK8/start"
+          target="_blank"
+          rel="nofollow"
         >
+          Book now
+        </a>
       </div>
     </header>
 
     <main>
       <div class="container">
-        <!-- ABOUT -->
-        <section id="about" aria-labelledby="about-title">
-          <h2 id="about-title">Meet Anna</h2>
-          <div class="about" style="margin-top: 12px">
-            <img
-              src="assets/anna-portrait.jpg"
-              alt="Anna hairstylist portrait"
-            />
-            <div>
-              <h3>Anna — Master Stylist & Color Specialist</h3>
-              <p style="color: var(--muted)">
-                Anna specializes in modern balayage, bespoke color, and
-                scalp-nourishing treatments. With 15 years of experience and a
-                passion for precision, she creates looks that fit each client's
-                personality and lifestyle.
-              </p>
-              <div class="instagram-cta">
-                <a
-                  href="https://www.instagram.com/anna_hairstylist_ba"
-                  target="_blank"
-                  rel="noopener"
-                  class="instagram-btn"
-                  aria-label="Visit Anna on Instagram"
-                >
-                  <svg class="ig-icon" aria-hidden="true">
-                    <use
-                      href="./assets/icons.svg#icon-instagram"
-                      xlink:href="./assets/icons.svg#icon-instagram"
-                    ></use>
-                  </svg>
-
-                  <span class="instagram-text">
-                    Follow on Instagram
-                    <strong>@anna_hairstylist_ba</strong>
-                  </span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- REVIEWS -->
-        <section id="reviews" class="card">
-          <h4>Feedback from Clients</h4>
-
-          <div class="reviews-slider">
-            <button class="rev-btn prev" aria-label="Previous review">‹</button>
-
-            <div class="reviews-track">
-              <article class="review">
-                <p class="review-text">
-                  “ Amazing experience! Anna is very professional and
-                  attentive.”
-                </p>
-                <div class="review-author">— Maria, Google</div>
-              </article>
-
-              <article class="review">
-                <p class="review-text">
-                  “Best haircut I’ve had in years. Highly recommend!”
-                </p>
-                <div class="review-author">— Julia, Instagram</div>
-              </article>
-            </div>
-
-            <button class="rev-btn next" aria-label="Next review">›</button>
-          </div>
-        </section>
         <!-- CONTACT & BOOKING -->
         <section id="contact" aria-labelledby="contact-title">
           <h2 id="contact-title">Contact & Booking</h2>
-          <div
-            style="
-              display: flex;
-              gap: 20px;
-              align-items: flex-start;
-              margin-top: 14px;
-              flex-wrap: wrap;
-            "
-          >
-            <div style="flex: 1; min-width: 260px" class="card">
-              <h4>Location</h4>
-              <p style="color: var(--muted)">
-                2255 Contra Costa Blvd, Suite 312<br />Pleasant Hill, CA 94523
-              </p>
-              <h4>Hours</h4>
-              <p style="color: var(--muted)">
-                Tue–Fri: 10:00–19:00<br />Sat: 9:00–17:00<br />Sun–Mon: Closed
-              </p>
 
-              <!-- <a class="btn" href="#booking">Book Now</a> -->
-              <!-- Start Square Appointments Embed code -->
-              <a
-                target="_blank"
-                style="
-                  background-color: #c46c9b;
-                  border: none;
-                  color: white;
-                  height: 40px;
-                  text-transform: uppercase;
-                  font-family: Helvetica, sans-serif;
-                  letter-spacing: 1px;
-                  line-height: 38px;
-                  padding: 0 28px;
-                  border-radius: 8px;
-                  font-weight: 500;
-                  font-size: 14px;
-                  cursor: pointer;
-                  display: inline-block;
-                "
-                href="https://app.squareup.com/appointments/book/9jg4j8mw5s47gy/LVHKNWGX17XK8/start"
-                rel="nofollow"
-                >Book now</a
-              >
-              <!-- End Square Appointments Embed code -->
+          <div class="booking-layout">
+            <!-- Left: photo -->
+            <div class="booking-photo">
+              <img src="./assets/salon.jpg" alt="Hair salon interior" />
             </div>
 
-            <div style="flex: 1; min-width: 260px" class="card">
-              <h4 id="booking">Book Your Appointment</h4>
+            <!-- Right: info card -->
+            <div class="booking-card">
+              <h3>Contact & Booking</h3>
 
-              <p style="margin-top: 10px; color: var(--muted)">
-                Message on Instagram:
-                <svg class="ig-icon" aria-hidden="true">
-                  <use
-                    href="./assets/icons.svg#icon-instagram"
-                    xlink:href="./assets/icons.svg#icon-instagram"
-                  ></use>
-                </svg>
-                <a
-                  class="instagram-link"
-                  href="https://www.instagram.com/anna_hairstylist_ba"
-                  target="_blank"
-                  >anna_hairstylist_ba</a
-                >
-              </p>
-              <p style="margin-top: 6px; color: var(--muted)">
-                Or book online using the widget below (you will be redirected to
-                Square site to proceed)
+              <div class="booking-item">
+                <strong>📍 Location</strong>
+                <p>
+                  2255 Contra Costa Blvd, Suite 312<br />
+                  Pleasant Hill, CA 94523
+                </p>
+              </div>
 
-                <!--online booking section -->
-                <script src="https://square.site/appointments/buyer/widget/9jg4j8mw5s47gy/LVHKNWGX17XK8.js"></script>
-              </p>
+              <div class="booking-item">
+                <strong>⏰ Hours</strong>
+                <p>
+                  Mon–Wed, Fri–Sat: 9:30 AM – 7:00 PM<br />
+                  Thu: 11:00 AM – 6:30 PM<br />
+                  Sun: 12:30 PM – 7:00 PM
+                </p>
+              </div>
+
+              <div class="booking-note">
+                <strong>Stylist availability</strong>
+                <p>
+                  Thursday & Sunday — <strong>Anya</strong><br />
+                  All other days — <strong>Anna</strong><br />
+                  <span>One master works per day</span>
+                </p>
+              </div>
+
+              <a
+                class="btn"
+                href="https://app.squareup.com/appointments/book/9jg4j8mw5s47gy/LVHKNWGX17XK8/start"
+                target="_blank"
+                rel="nofollow"
+              >
+                Book now
+              </a>
             </div>
           </div>
         </section>
@@ -226,193 +137,257 @@
                 <li class="service-item">
                   <button class="service-toggle">
                     <span>Women’s Hair Cut</span>
-                    <strong>$75–$95</strong>
+                    <strong>$80–$95 • 1 hr</strong>
                   </button>
                   <div class="service-desc">
-                    Includes consultation, precision cut, wash, and blow-dry.
-                    Tailored to face shape and daily routine.
+                    A personalized women’s haircut tailored to hair growth
+                    pattern, lifestyle, and desired shape. Includes styling.
                   </div>
                 </li>
 
                 <li class="service-item">
                   <button class="service-toggle">
                     <span>Men’s Hair Cut</span>
-                    <strong>$45–$55</strong>
+                    <strong>$60–65 • 45 min</strong>
                   </button>
                   <div class="service-desc">
-                    Clean, modern haircut with attention to detail and styling
-                    finish.
+                    A customized men’s haircut based on head shape, hair
+                    texture, and personal style. Includes consultation and
+                    styling.
                   </div>
                 </li>
 
                 <li class="service-item">
                   <button class="service-toggle">
-                    <span>Boost Up (roots volume)</span>
-                    <strong>$150</strong>
+                    <span>Blowout / Styling</span>
+                    <strong>$70–90 • 1 hr</strong>
                   </button>
                   <div class="service-desc">
-                    Long-lasting root lift treatment that adds natural volume
-                    without daily styling.
+                    A professional blowout and styling service using a blow
+                    dryer and styling products. Ideal for everyday wear,
+                    business meetings, or casual outings. Customized to hair
+                    type, haircut, and desired finish.
                   </div>
                 </li>
 
                 <li class="service-item">
                   <button class="service-toggle">
-                    <span>Hairstyle / Styling</span>
-                    <strong>$150–$300</strong>
+                    <span>Curl Awakening Service</span>
+                    <strong>$150 • 1.5 hr</strong>
                   </button>
                   <div class="service-desc">
-                    Event or everyday styling using professional tools and
-                    products for lasting hold and shine.
-                  </div>
-                </li>
-
-                <li class="service-item">
-                  <button class="service-toggle">
-                    <span>Hair Treatment</span>
-                    <strong>$140–$350</strong>
-                  </button>
-                  <div class="service-desc">
-                    Customized restorative treatment to repair, hydrate, and
-                    strengthen hair.
+                    A curl-enhancing service for naturally curly or wavy hair.
+                    Includes deep hydration, curl-definition styling, and curl
+                    care guidance.
                   </div>
                 </li>
               </ul>
+            </div>
 
-              <div style="margin-top: 12px">
-                <a class="btn" href="#booking">Book a Cut</a>
-              </div>
+            <!-- Chemical Services -->
+            <div class="card service-category">
+              <h3>Chemical Services</h3>
+
+              <ul class="price-list">
+                <li class="service-item">
+                  <button class="service-toggle">
+                    <span>Perm (Permanent Wave)</span>
+                    <strong>$300-350 · 3–5 hrs</strong>
+                  </button>
+                  <div class="service-desc">
+                    A permanent wave service designed to create long-lasting
+                    curls or waves. Customized to hair structure and desired
+                    result.
+                  </div>
+                </li>
+
+                <li class="service-item">
+                  <button class="service-toggle">
+                    <span>Perm Removal</span>
+                    <strong>$300 · 2.5–3 hrs</strong>
+                  </button>
+                  <div class="service-desc">
+                    A perm removal service designed to soften or reverse a
+                    previous permanent wave.
+                  </div>
+                </li>
+              </ul>
             </div>
 
             <!-- Coloring -->
             <div class="card service-category">
-              <h3>Coloring</h3>
+              <h3>Hair Coloring</h3>
 
               <ul class="price-list">
                 <li class="service-item">
                   <button class="service-toggle">
                     <span>All-over Color</span>
-                    <strong>$150–$250</strong>
+                    <strong>$180–250 · 2-3 hrs</strong>
                   </button>
                   <div class="service-desc">
-                    Full color application with consultation to select the
-                    perfect shade.
+                    A single-process color applied all over the hair. Not
+                    intended for blonding.
+                  </div>
+                </li>
+
+                <li class="service-item">
+                  <button class="service-toggle">
+                    <span>Blonding (Total Blonde)</span>
+                    <strong>$280–500 · 3–5 hrs ($90 per hour)</strong>
+                  </button>
+                  <div class="service-desc">
+                    A full blonding service performed with protective and
+                    restorative products. The service includes bleaching and
+                    toning, with a focus on maintaining hair quality and
+                    integrity.
+                  </div>
+                </li>
+
+                <li class="service-item">
+                  <button class="service-toggle">
+                    <span>Root Blonding </span>
+                    <strong>$200–290 · 3–3.5 hrs ($90 per hour) </strong>
+                  </button>
+                  <div class="service-desc">
+                    Root blonding with full-length toning. The service includes
+                    root bleaching and toning throughout the entire length.
+                    Shades are selected individually based on the client’s
+                    preferences and hair condition.
                   </div>
                 </li>
 
                 <li class="service-item">
                   <button class="service-toggle">
                     <span>Root Retouch</span>
-                    <strong>$90–$200</strong>
+                    <strong>$160–190 · 2 hrs</strong>
                   </button>
                   <div class="service-desc">
-                    Refreshes regrowth while maintaining seamless color
-                    blending.
+                    Root color retouch with optional toner to refresh the
+                    overall color. This service is not suitable for blonde
+                    services.
                   </div>
                 </li>
 
                 <li class="service-item">
                   <button class="service-toggle">
-                    <span>Highlights / Balayage / Air-Touch</span>
-                    <strong>$220–$450</strong>
+                    <span>Highlights / Balayage / Shatush / AirTouch </span>
+                    <strong>$390–450 · 3.5 –5 hrs </strong>
                   </button>
                   <div class="service-desc">
-                    Dimensional highlighting techniques customized for depth,
-                    brightness, and natural flow.
+                    Custom lightening techniques for dimensional,
+                    natural-looking blonde results. This service includes
+                    lightening selected sections, an express hair treatment, and
+                    toning. Haircut and adding a base (root) color between the
+                    lightened sections are not included and are charged
+                    separately, if needed.
                   </div>
                 </li>
 
                 <li class="service-item">
                   <button class="service-toggle">
-                    <span>Partial Air-Touch / Highlights</span>
-                    <strong>$270–$370</strong>
+                    <span>Partial or Face-Framing Highlights or AirTouch </span>
+                    <strong>$330–350 · 2.5–3.5 hrs </strong>
                   </button>
                   <div class="service-desc">
-                    Focused lightening for face-framing or crown areas.
+                    Targeted lightening in selected areas to refresh the look.
+                    Haircut and adding a base (root) color between the lightened
+                    sections are not included and are charged separately, if
+                    needed.
                   </div>
                 </li>
 
                 <li class="service-item">
                   <button class="service-toggle">
-                    <span>Color Remove</span>
-                    <strong>$150–$750</strong>
+                    <span>Color Correction</span>
+                    <strong>$450–500 · 5+ hrs($90 per hour)</strong>
                   </button>
                   <div class="service-desc">
-                    Safe and controlled color correction process based on hair
-                    history and condition.
+                    Corrective color service to remove unwanted tones or
+                    transition from dark colors. Consultation required.
                   </div>
                 </li>
               </ul>
-
-              <div style="margin-top: 12px">
-                <a class="btn" href="#booking">Book Color</a>
-              </div>
             </div>
 
             <!-- Scalp & Treatments -->
             <div class="card service-category">
-              <h3>Scalp & Treatments</h3>
+              <h3>Professional Hair Treatments</h3>
 
               <ul class="price-list">
                 <li class="service-item">
                   <button class="service-toggle">
-                    <span>Consultation & Scalp Diagnosis</span>
-                    <strong>$60</strong>
+                    <span>Modifix – Amino Acid Hair Treatment</span>
+                    <strong>$450 · 4-5 hrs</strong>
                   </button>
                   <div class="service-desc">
-                    Professional scalp analysis with personalized care
+                    An amino acid hair reconstruction treatment with results
+                    lasting up to 3–6 months. Restores structure and improves
+                    hair quality.
+                  </div>
+                </li>
+
+                <li class="service-item">
+                  <button class="service-toggle">
+                    <span>Vita-Lamination Organic Hair Treatment</span>
+                    <strong>$250 · 2–3 hrs</strong>
+                  </button>
+                  <div class="service-desc">
+                    An intensive treatment that restores and seals the hair
+                    surface, adding smoothness and shine.
+                  </div>
+                </li>
+
+                <li class="service-item">
+                  <button class="service-toggle">
+                    <span>Spa Keratin or Boosters & Refillers</span>
+                    <strong>$180 · 2 hrs</strong>
+                  </button>
+                  <div class="service-desc">
+                    Deep hair reconstruction and replenishment with essential
+                    microelements. Improves hair density and elasticity.
+                  </div>
+                </li>
+
+                <li class="service-item">
+                  <button class="service-toggle">
+                    <span>Сonsultation & Scalp Analysis with Trichoscope </span>
+                    <strong>$70 · 30–40 min </strong>
+                  </button>
+                  <div class="service-desc">
+                    Consultation and scalp analysis using a trichoscope.
+                    Includes a detailed scalp examination and personalized care
                     recommendations.
                   </div>
                 </li>
 
                 <li class="service-item">
                   <button class="service-toggle">
-                    <span>Scalp Peeling</span>
-                    <strong>$60</strong>
+                    <span>Scalp Peeling & Scalp Treatment</span>
+                    <strong>$90 · 40–50 min </strong>
                   </button>
                   <div class="service-desc">
-                    Deep exfoliation to remove buildup and promote healthy scalp
-                    balance.
+                    A comprehensive scalp care service, performed after a
+                    consultation with a hairstylist or trichologist. Includes a
+                    scalp peeling to deeply cleanse buildup and impurities,
+                    followed by a customized scalp treatment designed to hydrate
+                    and rebalance the scalp, as well as help address concerns
+                    such as seborrhea, dermatitis, and hair loss.
                   </div>
                 </li>
 
                 <li class="service-item">
                   <button class="service-toggle">
-                    <span>Scalp Treatment</span>
-                    <strong>$80</strong>
+                    <span>Hair Detox </span>
+                    <strong>$80–100 · 45–60 min </strong>
                   </button>
                   <div class="service-desc">
-                    Nourishing treatment to soothe, hydrate, and stimulate the
-                    scalp.
-                  </div>
-                </li>
-
-                <li class="service-item">
-                  <button class="service-toggle">
-                    <span>Hair Detox</span>
-                    <strong>$100–$120</strong>
-                  </button>
-                  <div class="service-desc">
-                    Removes mineral buildup and impurities for lighter,
-                    healthier-looking hair.
-                  </div>
-                </li>
-
-                <li class="service-item">
-                  <button class="service-toggle">
-                    <span>Product Set + Consultation</span>
-                    <strong>$200–$250</strong>
-                  </button>
-                  <div class="service-desc">
-                    Custom-selected home care products with detailed usage
-                    guidance.
+                    A detox treatment for the hair length. Removes mineral and
+                    metal buildup, leaving hair cleaner and shinier. Especially
+                    beneficial for blonde hair, helping reduce yellow tones and
+                    brighten the color.
                   </div>
                 </li>
               </ul>
-
-              <div style="margin-top: 12px">
-                <a class="btn" href="#booking">Book Treatment</a>
-              </div>
             </div>
           </div>
         </section>
@@ -421,7 +396,7 @@
         <section id="portfolio" aria-labelledby="gallery-title">
           <h2 id="gallery-title">Portfolio</h2>
           <p style="color: var(--muted); margin-top: 6px">
-            A selection of recent work. See more in Instagram
+            A selection of recent work. <br />See more in Instagram
             <svg class="ig-icon" aria-hidden="true">
               <use
                 href="./assets/icons.svg#icon-instagram"
@@ -451,6 +426,90 @@
           </div>
         </section>
 
+        <!-- ABOUT -->
+        <section id="about" aria-labelledby="about-title">
+          <h2 id="about-title">Meet our team</h2>
+
+          <div class="about" style="margin-top: 12px">
+            <img
+              src="assets/anna-portrait.jpg"
+              alt="Anna hairstylist portrait"
+            />
+            <div>
+              <h3>Anna</h3>
+              <p style="color: var(--muted)">
+                Anna is a hairstylist and colorist with over
+                <strong>17 years of professional experience.</strong> She
+                specializes in
+                <strong>AirTouch, Balayage, Highlights,</strong> all levels of
+                blonding, and <strong>permanent waves</strong>.
+              </p>
+              <p style="color: var(--muted)">
+                During the consultation,
+                <strong>organic hair and scalp treatments</strong> are
+                individually selected. A
+                <strong>scalp analysis using a trichoscope</strong> is
+                available.
+              </p>
+            </div>
+          </div>
+
+          <div class="about" style="margin-top: 12px">
+            <img
+              src="assets/anya-portrait.jpg"
+              alt="Anya hairstylist portrait"
+            />
+            <div>
+              <h3>Anya</h3>
+              <p style="color: var(--muted)">
+                <strong
+                  >Anya is a professional hairstylist with 16 years of
+                  experience.</strong
+                >
+                She specializes in
+                <strong>men’s and women’s haircuts of any complexity,</strong>
+                as well as <strong>advanced color services</strong> and
+                <strong>modern coloring techniques.</strong>
+              </p>
+              <p style="color: var(--muted)">
+                Anna <strong>pays close attention to detail,</strong> takes an
+                <strong>individual approach</strong> to each client, and selects
+                solutions based on
+                <strong>hair type, lifestyle, and desired results.</strong>
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- REVIEWS -->
+        <section id="reviews" class="card">
+          <h4>Feedback from Clients</h4>
+
+          <div class="reviews-slider">
+            <button class="rev-btn prev" aria-label="Previous review">‹</button>
+
+            <div class="reviews-track">
+              <article class="review">
+                <p class="review-text">
+                  “ Amazing experience! Anna is very professional and
+                  attentive.”
+                </p>
+                <div class="review-author">— Maria, Google</div>
+              </article>
+
+              <article class="review">
+                <p class="review-text">
+                  “Best haircut I’ve had in years. Highly recommend!”
+                </p>
+                <div class="review-author">— Julia, Instagram</div>
+              </article>
+            </div>
+
+            <button class="rev-btn next" aria-label="Next review">›</button>
+          </div>
+        </section>
+
+        <!-- FIND US AND LOCATION MAP -->
         <section id="location">
           <div class="card map-card">
             <h4>Find Us</h4>
@@ -466,16 +525,46 @@
             </div>
             <!-- Mobile map-->
             <div class="map-mobile">
-              <p>📍 2255 Contra Costa Blvd, Pleasant Hill, CA 94523</p>
+              <div class="map-mobile-row">
+                <a
+                  href="https://maps.google.com/?q=2255+Contra+Costa+Blvd+Pleasant+Hill+CA+94523"
+                  target="_blank"
+                  rel="noopener"
+                  class="map-address"
+                >
+                  📍 2255 Contra Costa Blvd, <br />Pleasant Hill, CA 94523
+                </a>
 
-              <a
-                href="https://maps.google.com/?q=2255+Contra+Costa+Blvd+Pleasant+Hill+CA+94523"
-                target="_blank"
-                rel="noopener"
-                class="map-button"
-              >
-                Open in Maps
-              </a>
+                <a
+                  href="https://maps.google.com/?q=2255+Contra+Costa+Blvd+Pleasant+Hill+CA+94523"
+                  target="_blank"
+                  rel="noopener"
+                  class="map-button"
+                >
+                  Open in Maps
+                </a>
+              </div>
+
+              <div class="instagram-cta">
+                <a
+                  href="https://www.instagram.com/anna_hairstylist_ba"
+                  target="_blank"
+                  rel="noopener"
+                  class="instagram-btn"
+                  aria-label="Instagram Анны"
+                >
+                  <svg class="ig-icon" aria-hidden="true">
+                    <use
+                      href="./assets/icons.svg#icon-instagram"
+                      xlink:href="./assets/icons.svg#icon-instagram"
+                    ></use>
+                  </svg>
+                  <span class="instagram-text">
+                    Follow us on Instagram
+                    <strong>@anna_hairstylist_ba</strong>
+                  </span>
+                </a>
+              </div>
             </div>
           </div>
         </section>
@@ -484,7 +573,7 @@
 
     <footer>
       <div class="container footer-div">
-        <div>© <strong>Anna Hairstylist</strong> — All rights reserved</div>
+        <div>© <strong>Hair Studio A</strong> — All rights reserved</div>
         <div style="color: var(--muted)">
           Follow on
           <svg class="ig-icon" aria-hidden="true">
