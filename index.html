@@ -103,6 +103,33 @@
             </div>
           </div>
         </section>
+        <!-- REVIEWS -->
+        <section id="reviews" class="card">
+          <h4>Feedback from Clients</h4>
+
+          <div class="reviews-slider">
+            <button class="rev-btn prev" aria-label="Previous review">‹</button>
+
+            <div class="reviews-track">
+              <article class="review">
+                <p class="review-text">
+                  “ Amazing experience! Anna is very professional and
+                  attentive.”
+                </p>
+                <div class="review-author">— Maria, Google</div>
+              </article>
+
+              <article class="review">
+                <p class="review-text">
+                  “Best haircut I’ve had in years. Highly recommend!”
+                </p>
+                <div class="review-author">— Julia, Instagram</div>
+              </article>
+            </div>
+
+            <button class="rev-btn next" aria-label="Next review">›</button>
+          </div>
+        </section>
         <!-- CONTACT & BOOKING -->
         <section id="contact" aria-labelledby="contact-title">
           <h2 id="contact-title">Contact & Booking</h2>
@@ -125,16 +152,35 @@
                 Tue–Fri: 10:00–19:00<br />Sat: 9:00–17:00<br />Sun–Mon: Closed
               </p>
 
-              <!-- <p > -->
-              <a class="btn" href="#booking">Book Now</a>
-              <!-- </p> -->
+              <!-- <a class="btn" href="#booking">Book Now</a> -->
+              <!-- Start Square Appointments Embed code -->
+              <a
+                target="_blank"
+                style="
+                  background-color: #c46c9b;
+                  border: none;
+                  color: white;
+                  height: 40px;
+                  text-transform: uppercase;
+                  font-family: Helvetica, sans-serif;
+                  letter-spacing: 1px;
+                  line-height: 38px;
+                  padding: 0 28px;
+                  border-radius: 8px;
+                  font-weight: 500;
+                  font-size: 14px;
+                  cursor: pointer;
+                  display: inline-block;
+                "
+                href="https://app.squareup.com/appointments/book/9jg4j8mw5s47gy/LVHKNWGX17XK8/start"
+                rel="nofollow"
+                >Book now</a
+              >
+              <!-- End Square Appointments Embed code -->
             </div>
 
             <div style="flex: 1; min-width: 260px" class="card">
               <h4 id="booking">Book Your Appointment</h4>
-
-              <!--online booking section -->
-              <script src="https://square.site/appointments/buyer/widget/9jg4j8mw5s47gy/LVHKNWGX17XK8.js"></script>
 
               <p style="margin-top: 10px; color: var(--muted)">
                 Message on Instagram:
@@ -150,6 +196,13 @@
                   target="_blank"
                   >anna_hairstylist_ba</a
                 >
+              </p>
+              <p style="margin-top: 6px; color: var(--muted)">
+                Or book online using the widget below (you will be redirected to
+                Square site to proceed)
+
+                <!--online booking section -->
+                <script src="https://square.site/appointments/buyer/widget/9jg4j8mw5s47gy/LVHKNWGX17XK8.js"></script>
               </p>
             </div>
           </div>
@@ -451,6 +504,5 @@
     </footer>
 
     <script src="script.js"></script>
-
   </body>
 </html>

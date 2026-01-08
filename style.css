@@ -492,3 +492,52 @@ ul.price-list li.service-item {
     display: block;
   }
 }
+
+.reviews-slider {
+  position: relative;
+  overflow: hidden;
+  margin-top: 12px;
+}
+
+.reviews-track {
+  display: flex;
+  transition: transform 0.4s ease;
+}
+
+.review {
+  min-width: 100%;
+  padding: 6px;
+}
+
+.review-text {
+  font-style: italic;
+  line-height: 1.5;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.review-author {
+  margin-top: 10px;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.rev-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: white;
+  border: none;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+.rev-btn.prev { left: 4px; }
+.rev-btn.next { right: 4px; }
+
+/* mobile */
+@media (max-width: 520px) {
+  .rev-btn {
+    display: none;
+  }
+}
