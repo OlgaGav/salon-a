@@ -33,7 +33,7 @@ h4 {
 }
 
 section {
-  margin: 1rem 0 1rem 0;
+  margin: 2rem 0 1rem 0;
   border-top: 1px solid #f2f2f2;
 }
 a {
@@ -239,10 +239,10 @@ ul.price-list li {
     display: block;
   }
 
-  .about-left,
+  /* .about-left,
   .about-right {
     flex-direction: initial;
-  }
+  } */
 
   .about img {
     width: 120px;
@@ -660,6 +660,110 @@ ul.price-list li.service-item {
     display: none;
   }
 }
+
+/* Reviews strip (mobile-first) */
+.reviews-strip {
+  display: flex;
+  gap: 16px;
+  margin-top: 14px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 8px;
+}
+
+.review-img {
+  position: relative;
+  flex: 0 0 70%;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.reviews-strip::-webkit-scrollbar {
+  display: none;
+}
+
+.review-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .reviews-strip {
+    overflow-x: visible;
+    scroll-snap-type: none;
+  }
+
+  .review-img {
+    flex: 0 0 calc(50% - 8px);
+  }
+}
+@media (min-width: 1024px) {
+  .review-img {
+    flex: 0 0 calc(33.333% - 11px);
+  }
+}
+@media (hover: hover) {
+  .review-img:hover {
+    transform: translateY(-4px);
+    transition: transform 0.2s ease;
+  }
+}
+
+
+/* Source badge */
+.review-source {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.9);
+  font-weight: 600;
+  pointer-events: none;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.review-source.google {
+  color: #4285f4;
+}
+
+.review-source.instagram {
+  color: #e1306c;
+}
+
+.review-source.yelp {
+  color: #e1306c;
+}
+
+/* CTA */
+.reviews-cta {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.03);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.reviews-cta strong {
+  color: var(--accent);
+}
+
+.reviews-cta:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+
+
+
 
 .map-mobile .instagram-cta {
   margin-top: 14px;
