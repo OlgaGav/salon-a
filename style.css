@@ -239,10 +239,10 @@ ul.price-list li {
     display: block;
   }
 
-  .about-left,
+  /* .about-left,
   .about-right {
     flex-direction: initial;
-  }
+  } */
 
   .about img {
     width: 120px;
