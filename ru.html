@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Анна — Hair Studio A</title>
+    <title>Hair Studio A</title>
     <meta
       name="description"
       content="Анна — мастер-стилист и колорист. Стрижки, окрашивание, уход за волосами. Instagram @anna_hairstylist_ba"
     />
+    <link rel="icon" type="image/x-icon" href="./assets/studioA_logo.png" />
     <link rel="stylesheet" href="style.css" />
     <link rel="alternate" hreflang="ru" href="./ru.html" />
     <link rel="alternate" hreflang="en" href="./" />
@@ -20,10 +21,11 @@
             src="./assets/logo.png"
             alt="Логотип Анны"
             style="
-              width: 44px;
-              height: 44px;
+              width: 60px;
+              height: 60px;
               border-radius: 8px;
               object-fit: cover;
+              margin: 0 1rem 0 1rem;
             "
           />
           <div>
@@ -34,9 +36,9 @@
         <nav class="nav-links" aria-label="Primary">
           <a href="#services">Услуги</a>
           <a href="#portfolio">Портфолио</a>
-          <a href="#about">Обо мне</a>
+          <a href="#about">Стилисты</a>
           <a href="#contact">Контакты</a>
-          <a class="btn" href="#booking">Записаться</a>
+          <!-- <a class="btn" href="#booking">Записаться</a> -->
 
           <div class="lang-switch" id="langSwitch">
             <a href="./">EN</a> | <a href="./ru.html" class="active">RU</a>
@@ -48,7 +50,13 @@
           <option value="./ru.html" selected>RU</option>
         </select>
 
-        <a class="btn" href="#booking" style="display: none" id="mobileBook">
+        <a
+          class="btn"
+          id="mobileBook"
+          href="https://app.squareup.com/appointments/book/9jg4j8mw5s47gy/LVHKNWGX17XK8/start"
+          target="_blank"
+          rel="nofollow"
+        >
           Запись
         </a>
       </div>
@@ -56,6 +64,398 @@
 
     <main>
       <div class="container">
+        <section id="contact" aria-labelledby="contact-title">
+          <h2 id="contact-title">Contact & Booking</h2>
+
+          <div class="booking-layout">
+            <!-- Left: photo -->
+            <div class="booking-photo">
+              <img src="./assets/salon.jpg" alt="Hair salon interior" />
+            </div>
+
+            <!-- Right: info card -->
+            <div class="booking-card">
+              <h3>Contact & Booking</h3>
+
+              <div class="booking-item">
+                <strong>📍 Адрес</strong>
+                <p>
+                  2255 Contra Costa Blvd, Suite 312<br />
+                  Pleasant Hill, CA 94523
+                </p>
+              </div>
+
+              <div class="booking-item">
+                <strong>⏰ Часы работы</strong>
+                <p>
+                  Пн–Ср, Пт–Сб: 9:30–19:00<br />
+                  Чт: 11:00–18:30<br />
+                  Вс: 12:30–19:00
+                </p>
+              </div>
+
+              <div class="booking-note">
+                <strong>Дни работы мастеров</strong>
+                <p>
+                  Пн, Вт, Ср, Пт, Сб — <strong>Анна</strong>
+                  <br />
+                  Чт, Вс — <strong>Аня</strong>
+                </p>
+              </div>
+
+              <a
+                class="btn"
+                href="https://app.squareup.com/appointments/book/9jg4j8mw5s47gy/LVHKNWGX17XK8/start"
+                target="_blank"
+                rel="nofollow"
+              >
+                Записаться онлайн
+              </a>
+              <p>
+                Обратите внимание что запись онлайн доступна только на англиском
+                языке
+              </p>
+              <p>Также можно записаться через Instagram</p>
+              <div class="instagram-cta">
+                <a
+                  href="https://www.instagram.com/anna_hairstylist_ba"
+                  target="_blank"
+                  rel="noopener"
+                  class="instagram-btn"
+                  aria-label="Instagram Анны"
+                >
+                  <svg class="ig-icon" aria-hidden="true">
+                    <use
+                      href="./assets/icons.svg#icon-instagram"
+                      xlink:href="./assets/icons.svg#icon-instagram"
+                    ></use>
+                  </svg>
+                  <span class="instagram-text">
+                    Перейти в Instagram
+                    <strong>@anna_hairstylist_ba</strong>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SERVICES & PRICING -->
+        <section id="services" aria-labelledby="services-title">
+          <h2 id="services-title">Services & Prices</h2>
+
+          <div class="grid-3" style="margin-top: 18px">
+            <!-- Haircuts & Styling -->
+            <div class="card service-category">
+              <h3>Haircuts & Styling</h3>
+
+              <ul class="price-list">
+                <li class="service-item">
+                  <button class="service-toggle">
+                    <span>Женская стрижка</span>
+                    <strong>$80–$95<br />1 час</strong>
+                  </button>
+                  <div class="service-desc">
+                    Женская стрижка с индивидуальным подбором формы и длины. Учитывается рост волос, уход и удобство в носке. Включает укладку.
+                  </div>
+                </li>
+
+                <li class="service-item">
+                  <button class="service-toggle">
+                    <span>Мужская стрижка</span>
+                    <strong>$60–65<br />45 мин</strong>
+                  </button>
+                  <div class="service-desc">
+                    Мужская стрижка с учётом формы головы, структуры волос и образа клиента. Включает консультацию и укладку.
+                  </div>
+                </li>
+
+                <li class="service-item">
+                  <button class="service-toggle">
+                    <span>Профессиональная укладка</span>
+                    <strong>$70–90<br />1 час</strong>
+                  </button>
+                  <div class="service-desc">
+                    Профессиональная укладка с использованием фена и стайлинга. Подходит для повседневных образов, деловых встреч и лёгких выходов. Выполняется с учётом типа волос, формы стрижки и желаемого результата.
+                  </div>
+                </li>
+
+                <li class="service-item">
+                  <button class="service-toggle">
+                    <span>Процедура для кудрявых волос</span>
+                    <strong>$150<br />1.5 часа</strong>
+                  </button>
+                  <div class="service-desc">
+                    Процедура для натуральных кудрявых и волнистых волос. Включает глубокое увлажнение, укладку кудрявым методом и рекомендации по уходу.
+                  </div>
+                </li>
+
+                <li class="service-item">
+                  <button class="service-toggle">
+                    <span>Биозавивка волос</span>
+                    <strong>$300-$350<br />3-5 часа</strong>
+                  </button>
+                  <div class="service-desc">Биозавивка для создания стойких локонов или волн. Подбирается индивидуально с учётом структуры волос и желаемого результата.</div>
+                </li>
+
+                <li class="service-item">
+                  <button class="service-toggle">
+                    <span>Процедура смывания химической завивки волос</span>
+                    <strong>$300<br />2.5-3 часа</strong>
+                  </button>
+                  <div class="service-desc">Процедура развивки для ослабления или удаления ранее выполненной химической завивки.</div>
+                </li>
+
+              </ul>
+            </div>
+
+            <!-- Coloring -->
+            <div class="card service-category">
+              <h3>Окрашивание волос</h3>
+
+              <ul class="price-list">
+                <li class="service-item">
+                  <button class="service-toggle">
+                    <span>Окрашивание в один тон</span>
+                    <strong>$180–250<br />2-3 часа</strong>
+                  </button> 
+                  <div class="service-desc">
+                    Окрашивание волос в один тон по всей длине. Не подходит для осветления.
+                  </div>
+                </li>
+
+                <li class="service-item">
+                  <button class="service-toggle">
+                    <span>Blonding (Total Blonde)</span>
+                    <strong>$280–500<br />3–5 часов <br />($90 за час)</strong>
+                  </button>
+                  <div class="service-desc">
+                    Полное осветление волос с использованием защитных и уходовых средств.
+                    <br/> Услуга включает обесцвечивание и тонирование, с акцентом на сохранение качества и здоровья волос.
+                  </div>
+                </li>
+
+                <li class="service-item">
+                  <button class="service-toggle">
+                    <span>Root Blonding </span>
+                    <strong>$200–290<br />3–3.5 часов<br />($90 за час)</strong>
+                  </button>
+                  <div class="service-desc">
+                    Окрашивание корней в блонд с тонированием длины. Услуга включает обесцвечивание корней и тонирование по всей длине волос.
+                  <br/> Оттенки подбираются индивидуально в зависимости от пожеланий клиента и состояния волос.
+                  </div>
+                </li>
+
+                <li class="service-item">
+                  <button class="service-toggle">
+                    <span>Окрашивание корней</span>
+                    <strong>$160–190<br />2 часа</strong>
+                  </button>
+                  <div class="service-desc">
+                    Окрашивание отросших корней с возможным тонированием длины.
+                  </div>
+                </li>
+
+                <li class="service-item">
+                  <button class="service-toggle">
+                    <span>Мелирование, Балаяж, Шатуш и AirTouch</span>
+                    <strong>$390–450<br />3.5 –5 часов</strong>
+                  </button>
+                  <div class="service-desc">
+                    Сложные техники осветления для создания глубины, мягких переходов и естественного блонда.
+                  </div>
+                </li>
+
+                <li class="service-item">
+                  <button class="service-toggle">
+                    <span>Частичное мелирование или мелирование у лица / техника AirTouch</span>
+                    <strong>$330–350<br />2.5–3.5 часов</strong>
+                  </button>
+                  <div class="service-desc">
+                    Осветление отдельных зон для освежения образа без полного окрашивания.
+                  </div>
+                </li>
+
+                <li class="service-item">
+                  <button class="service-toggle">
+                    <span>Коррекция цвета/тона</span>
+                    <strong>$450–500<br />5+ часов<br />($90 за час)</strong>
+                  </button>
+                  <div class="service-desc">
+                    Коррекция нежелательного цвета или выход из тёмных оттенков. Требует консультации.
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Scalp & Treatments -->
+            <div class="card service-category">
+              <h3>Профессиональные процедуры по уходу за волосами</h3>
+
+              <ul class="price-list">
+                <li class="service-item">
+                  <button class="service-toggle">
+                    <span>Modifix – Amino Acid лечение волос</span>
+                    <strong>$450<br />4-5 часов</strong>
+                  </button>
+                  <div class="service-desc">
+                    Аминокислотная реконструкция волос с эффектом до 3–6 месяцев. Восстанавливает структуру и качество волос, особенно после окрашивания.
+                  </div>
+                </li>
+
+                <li class="service-item">
+                  <button class="service-toggle">
+                    <span>Vita-Lamination Organic лечение волос</span>
+                    <strong>$250<br />2–3 часов</strong>
+                  </button>
+                  <div class="service-desc">
+                    Интенсивное восстановление и «запаивание» волос. Придаёт гладкость и блеск. Не рекомендуется для очень сухих волос.
+                  </div>
+                </li>
+
+                <li class="service-item">
+                  <button class="service-toggle">
+                    <span>Spa Keratin or Boosters & Refillers</span>
+                    <strong>$180<br />2 часа</strong>
+                  </button>
+                  <div class="service-desc">
+                    Глубокая реконструкция и наполнение волос микроэлементами. Повышает плотность и эластичность.
+                  </div>
+                </li>
+
+                <li class="service-item">
+                  <button class="service-toggle">
+                    <span>Консультация и анализ кожи головы с трихоскопом</span>
+                    <strong>$70<br />30–40 мин</strong>
+                  </button>
+                  <div class="service-desc">Консультация и диагностика кожи головы с помощью трихоскопа.
+                    <br/> Включает осмотр кожи головы, оценку состояния волос и индивидуальные рекомендации по уходу и процедурам.
+                  </div>
+                </li>
+
+                <li class="service-item">
+                  <button class="service-toggle">
+                    <span>Пилинг и уход за кожей головы</span>
+                    <strong>$90<br />40–50 мин</strong>
+                  </button>
+                  <div class="service-desc">
+                    Комплексная процедура для кожи головы, выполняемая после консультации с парикмахером или трихологом.
+                    <br/>Включает пилинг кожи головы для глубокого очищения от себума и загрязнений, а также индивидуально подобранный уход (treatment) для увлажнения, восстановления баланса кожи головы и коррекции таких состояний, как себорея, дерматит и выпадение волос.
+                  </div>
+                </li>
+
+                <li class="service-item">
+                  <button class="service-toggle">
+                    <span>Уход за волосами (detox)</span>
+                    <strong>$80–100<br />45–60 мин</strong>
+                  </button>
+                  <div class="service-desc">
+                    Детокс для волос с глубоким очищением длины.
+                    <br/> Удаляет минеральные и металлические отложения, делает волосы более чистыми и блестящими.
+                    <br/> Особенно рекомендован для блонда — помогает снизить желтизну и осветлить тон.
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <p style="color: var(--muted); margin-top: 6px">
+            Прозрачное ценообразование. Продолжительность и точная стоимость
+            зависят от длины волос и сложности работы и уточняются на
+            консультации.
+          </p>
+        </section>
+
+        <!-- GALLERY -->
+        <section id="portfolio" aria-labelledby="gallery-title">
+          <h2 id="gallery-title">Портфолио</h2>
+          <p style="color: var(--muted); margin-top: 6px">
+            Примеры последних работ. Смотрите больше — в Instagram
+            <svg class="ig-icon" aria-hidden="true">
+              <use
+                href="./assets/icons.svg#icon-instagram"
+                xlink:href="./assets/icons.svg#icon-instagram"
+              ></use>
+            </svg>
+            <a
+              href="https://www.instagram.com/anna_hairstylist_ba"
+              target="_blank"
+              class="instagram-link"
+              >anna_hairstylist_ba</a
+            >.
+          </p>
+          <div class="gallery-wrapper">
+            <button class="gallery-arrow left" id="galleryPrev">❮</button>
+            <div class="gallery gallery-row" id="gallery"></div>
+            <button class="gallery-arrow right" id="galleryNext">❯</button>
+          </div>
+
+          <!-- Lightbox viewer -->
+          <div id="lightbox" class="lightbox hidden">
+            <button class="close-btn" id="lightbox-close">✕</button>
+            <button class="nav-btn prev" id="lightbox-prev">❮</button>
+            <img id="lightbox-img" alt="" />
+            <button class="nav-btn next" id="lightbox-next">❯</button>
+          </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about" aria-labelledby="about-title">
+          <h2 id="about-title">Meet our team</h2>
+          <div class="about-divider"></div>
+          <div class="about about-left" style="margin-top: 12px">
+            <img
+              src="assets/anna-portrait.jpg"
+              alt="Anna hairstylist portrait"
+            />
+            <div>
+              <h3>Anna</h3>
+              <p style="color: var(--muted)">
+                Anna is a hairstylist and colorist with over
+                <strong>17 years of professional experience.</strong> She
+                specializes in
+                <strong>AirTouch, Balayage, Highlights,</strong> all levels of
+                blonding, and <strong>permanent waves</strong>.
+              </p>
+              <p style="color: var(--muted)">
+                During the consultation,
+                <strong>organic hair and scalp treatments</strong> are
+                individually selected. A
+                <strong>scalp analysis using a trichoscope</strong> is
+                available.
+              </p>
+            </div>
+          </div>
+
+          <div class="about-divider"></div>
+
+          <div class="about about-right" style="margin-top: 12px">
+            <img
+              src="assets/anya-portrait.jpg"
+              alt="Anya hairstylist portrait"
+            />
+            <div>
+              <h3>Anya</h3>
+              <p style="color: var(--muted)">
+                <strong
+                  >Anya is a professional hairstylist with 16 years of
+                  experience.</strong
+                >
+                She specializes in
+                <strong>men’s and women’s haircuts of any complexity,</strong>
+                as well as <strong>advanced color services</strong> and
+                <strong>modern coloring techniques.</strong>
+              </p>
+              <p style="color: var(--muted)">
+                Anna <strong>pays close attention to detail,</strong> takes an
+                <strong>individual approach</strong> to each client, and selects
+                solutions based on
+                <strong>hair type, lifestyle, and desired results.</strong>
+              </p>
+            </div>
+          </div>
+          <div class="about-divider"></div>
+        </section>
+
         <!-- REVIEWS -->
         <section id="reviews" class="card">
           <h2>Отзывы клиентов</h2>
@@ -93,167 +493,10 @@
           </div>
         </section>
 
-        <!-- CONTACT & BOOKING -->
-        <section id="contact" aria-labelledby="contact-title">
-          <h2 id="contact-title">Контакты и запись</h2>
-
-          <div
-            style="
-              display: flex;
-              gap: 20px;
-              align-items: flex-start;
-              margin-top: 14px;
-              flex-wrap: wrap;
-            "
-          >
-            <div style="flex: 1; min-width: 260px" class="card">
-              <h4>Адрес</h4>
-              <p style="color: var(--muted)">
-                2255 Contra Costa Blvd, Suite 312<br />
-                Pleasant Hill, CA 94523
-              </p>
-
-              <h4 style="margin-top: 12px">Часы работы</h4>
-              <p style="color: var(--muted)">
-                Вт–Пт: 10:00–19:00<br />
-                Сб: 9:00–17:00<br />
-                Вс–Пн: выходной
-              </p>
-
-              <p style="margin-top: 8px">
-                <a class="btn" href="#booking">Записаться</a>
-              </p>
-            </div>
-
-            <div style="flex: 1; min-width: 260px" class="card">
-              <h4 id="booking">Запись на приём</h4>
-              <p style="color: var(--muted)">
-                Что бы записаться пожалуйста, напишите сообщение в Instagram.
-                Онлайн-запись доступна в английской версии сайта.
-              </p>
-              <p style="margin-top: 10px; color: var(--muted)">
-                Instagram:
-                <svg class="ig-icon" aria-hidden="true">
-                  <use
-                    href="./assets/icons.svg#icon-instagram"
-                    xlink:href="./assets/icons.svg#icon-instagram"
-                  ></use>
-                </svg>
-                <a
-                  href="https://www.instagram.com/anna_hairstylist_ba"
-                  target="_blank"
-                  class="instagram-link"
-                  >anna_hairstylist_ba</a
-                >
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <!-- SERVICES -->
-        <section id="services" aria-labelledby="services-title">
-          <h2 id="services-title">Услуги и цены</h2>
-          <p style="color: var(--muted); margin-top: 6px">
-            Прозрачное ценообразование. Продолжительность и точная стоимость
-            зависят от длины волос и сложности работы и уточняются на
-            консультации.
-          </p>
-          <div class="grid-3" style="margin-top: 18px">
-            <!-- Haircuts & Styling -->
-            <div class="card service-category">
-              <h3>Стрижки и укладки</h3>
-
-              <ul class="price-list">
-                <li>Женская стрижка<strong>$75–$95</strong></li>
-                <li>Мужская стрижка<strong>$45–$55</strong></li>
-                <li>Boost Up (прикорневой объём)<strong>$150</strong></li>
-                <li>Причёска / укладка<strong>$150–$300</strong></li>
-                <li>Уход за волосами<strong>$140–$350</strong></li>
-              </ul>
-
-              <div style="margin-top: 12px">
-                <a class="btn" href="#booking">Записаться на стрижку</a>
-              </div>
-            </div>
-
-            <!-- Coloring -->
-            <div class="card service-category">
-              <h3>Окрашивание</h3>
-
-              <ul class="price-list">
-                <li>Окрашивание в один тон<strong>$150–$250</strong></li>
-                <li>Окрашивание корней<strong>$90–$200</strong></li>
-                <li>
-                  Мелирование / Балаяж / AirTouch<strong>$220–$450</strong>
-                </li>
-                <li>
-                  Частичный AirTouch / мелирование<strong>$270–$370</strong>
-                </li>
-                <li>Смывка цвета<strong>$150–$750</strong></li>
-              </ul>
-
-              <div style="margin-top: 12px">
-                <a class="btn" href="#booking">Записаться на окрашивание</a>
-              </div>
-            </div>
-
-            <!-- Scalp & Treatments -->
-            <div class="card service-category">
-              <h3>Кожа головы и уход</h3>
-
-              <ul class="price-list">
-                <li>
-                  Консультация и диагностика кожи головы<strong>$60</strong>
-                </li>
-                <li>Глубокое очищение кожи головы<strong>$60</strong></li>
-                <li>Уход за кожей головы<strong>$80</strong></li>
-                <li>Детокс для волос<strong>$100–$120</strong></li>
-                <li>Набор средств + консультация<strong>$200–$250</strong></li>
-              </ul>
-
-              <div style="margin-top: 12px">
-                <a class="btn" href="#booking">Записаться на уход</a>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- GALLERY -->
-        <section id="portfolio" aria-labelledby="gallery-title">
-          <h2 id="gallery-title">Портфолио</h2>
-          <p style="color: var(--muted); margin-top: 6px">
-            Примеры последних работ. Смотрите больше — в Instagram
-            <svg class="ig-icon" aria-hidden="true">
-              <use
-                href="./assets/icons.svg#icon-instagram"
-                xlink:href="./assets/icons.svg#icon-instagram"
-              ></use>
-            </svg>
-            <a
-              href="https://www.instagram.com/anna_hairstylist_ba"
-              target="_blank"
-              class="instagram-link"
-              >anna_hairstylist_ba</a
-            >.
-          </p>
-          <div class="gallery-wrapper">
-            <button class="gallery-arrow left" id="galleryPrev">❮</button>
-            <div class="gallery gallery-row" id="gallery"></div>
-            <button class="gallery-arrow right" id="galleryNext">❯</button>
-          </div>
-
-          <!-- Lightbox viewer -->
-          <div id="lightbox" class="lightbox hidden">
-            <button class="close-btn" id="lightbox-close">✕</button>
-            <button class="nav-btn prev" id="lightbox-prev">❮</button>
-            <img id="lightbox-img" alt="" />
-            <button class="nav-btn next" id="lightbox-next">❯</button>
-          </div>
-        </section>
-
+        <!-- FIND US AND LOCATION MAP -->
         <section id="location">
           <div class="card map-card">
-            <h4>Салон расположен по адресу</h4>
+            <h4>Как нас найти</h4>
 
             <!-- Desktop map -->
             <div class="map-embed desktop-map">
@@ -266,42 +509,46 @@
             </div>
             <!-- Mobile map-->
             <div class="map-mobile">
-              <p>📍 2255 Contra Costa Blvd, Pleasant Hill, CA 94523</p>
+              <div class="map-mobile-row">
+                <a
+                  href="https://maps.google.com/?q=2255+Contra+Costa+Blvd+Pleasant+Hill+CA+94523"
+                  target="_blank"
+                  rel="noopener"
+                  class="map-address"
+                >
+                  📍 2255 Contra Costa Blvd, <br />Pleasant Hill, CA 94523
+                </a>
 
-              <a
-                href="https://maps.google.com/?q=2255+Contra+Costa+Blvd+Pleasant+Hill+CA+94523"
-                target="_blank"
-                rel="noopener"
-                class="map-button"
-              >
-                Открыть в Google Maps
-              </a>
-            </div>
-          </div>
-        </section>
+                <a
+                  href="https://maps.google.com/?q=2255+Contra+Costa+Blvd+Pleasant+Hill+CA+94523"
+                  target="_blank"
+                  rel="noopener"
+                  class="map-button"
+                >
+                  Открыть в Гугл Картах
+                </a>
+              </div>
 
-        <!-- ABOUT -->
-        <section id="about" aria-labelledby="about-title">
-          <h2 id="about-title">Познакомьтесь с командой</h2>
-          <div class="about" style="margin-top: 12px">
-            <img
-              src="assets/anna-portrait.jpg"
-              alt="Портрет Анны — парикмахер"
-            />
-            <div>
-              <h3>Анна</h3>
-              <p style="color: var(--muted)">
-                Анна — парикмахер-стилист и колорист с более чем
-                <strong>17-летним профессиональным опытом.</strong>
-                Специализируется на
-                <strong>AirTouch, Balayage, Highlights,</strong> работе с
-                блондом любой сложности и <strong>перманентной завивке.</strong>
-
-                Во время консультации индивидуально подбираются уход и
-                <strong>органические тритменты</strong> для волос и кожи головы.
-                Также доступна услуга
-                <strong>диагностика кожи головы с помощью трихоскопа.</strong>
-              </p>
+              <div class="instagram-cta">
+                <a
+                  href="https://www.instagram.com/anna_hairstylist_ba"
+                  target="_blank"
+                  rel="noopener"
+                  class="instagram-btn"
+                  aria-label="Инстаграм салона Анны Hair Studio A"
+                >
+                  <svg class="ig-icon" aria-hidden="true">
+                    <use
+                      href="./assets/icons.svg#icon-instagram"
+                      xlink:href="./assets/icons.svg#icon-instagram"
+                    ></use>
+                  </svg>
+                  <span class="instagram-text">
+                    Instagram
+                    <strong>anna_hairstylist_ba</strong>
+                  </span>
+                </a>
+              </div>
             </div>
           </div>
         </section>

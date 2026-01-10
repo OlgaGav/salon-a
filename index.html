@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Anna - Hair Studio A</title>
+    <title>Hair Studio A</title>
     <meta
       name="description"
-      content="Anna — Master stylist & color specialist. Book haircuts, color, treatments. Follow on Instagram @anna_hairstylist_ba"
+      content="Anna — stylist & color specialist. Book haircuts, color, treatments. Follow on Instagram @anna_hairstylist_ba"
     />
+    <link rel="icon" type="image/x-icon" href="./assets/studioA_logo.png" />
     <link rel="stylesheet" href="style.css" />
     <link rel="alternate" hreflang="ru" href="./ru.html" />
     <link rel="alternate" hreflang="en" href="./" />
@@ -18,12 +19,13 @@
         <a class="logo" href="./">
           <img
             src="./assets/logo.png"
-            alt="Anna logo"
+            alt="Hair Studio A logo"
             style="
-              width: 44px;
-              height: 44px;
+              width: 60px;
+              height: 60px;
               border-radius: 8px;
               object-fit: cover;
+              margin: 0 1rem 0 1rem;
             "
           />
           <div>
@@ -101,9 +103,8 @@
               <div class="booking-note">
                 <strong>Stylist availability</strong>
                 <p>
-                  Thursday & Sunday — <strong>Anya</strong><br />
-                  All other days — <strong>Anna</strong><br />
-                  <span>One master works per day</span>
+                  Mon, Tue, Wed, Sat — <strong>Anna</strong><br />
+                  Thu, Sun — <strong>Anya</strong>
                 </p>
               </div>
 
@@ -115,6 +116,27 @@
               >
                 Book now
               </a>
+              <p>You can also send direct messages on Instagram for booking.</p>
+              <div class="instagram-cta">
+                <a
+                  href="https://www.instagram.com/anna_hairstylist_ba"
+                  target="_blank"
+                  rel="noopener"
+                  class="instagram-btn"
+                  aria-label="Instagram Hair Studio A"
+                >
+                  <svg class="ig-icon" aria-hidden="true">
+                    <use
+                      href="./assets/icons.svg#icon-instagram"
+                      xlink:href="./assets/icons.svg#icon-instagram"
+                    ></use>
+                  </svg>
+                  <span class="instagram-text">
+                    Instagram
+                    <strong>anna_hairstylist_ba</strong>
+                  </span>
+                </a>
+              </div>
             </div>
           </div>
         </section>
@@ -122,11 +144,6 @@
         <!-- SERVICES & PRICING -->
         <section id="services" aria-labelledby="services-title">
           <h2 id="services-title">Services & Prices</h2>
-          <p style="color: var(--muted); margin-top: 6px">
-            Transparent pricing so you can choose the right service. Duration
-            and exact price depends on hair length and complexity — final price
-            confirmed during consultation.
-          </p>
 
           <div class="grid-3" style="margin-top: 18px">
             <!-- Haircuts & Styling -->
@@ -137,7 +154,7 @@
                 <li class="service-item">
                   <button class="service-toggle">
                     <span>Women’s Hair Cut</span>
-                    <strong>$80–$95 • 1 hr</strong>
+                    <strong>$80–$95<br />1 hr</strong>
                   </button>
                   <div class="service-desc">
                     A personalized women’s haircut tailored to hair growth
@@ -148,7 +165,7 @@
                 <li class="service-item">
                   <button class="service-toggle">
                     <span>Men’s Hair Cut</span>
-                    <strong>$60–65 • 45 min</strong>
+                    <strong>$60–65<br />45 min</strong>
                   </button>
                   <div class="service-desc">
                     A customized men’s haircut based on head shape, hair
@@ -160,7 +177,7 @@
                 <li class="service-item">
                   <button class="service-toggle">
                     <span>Blowout / Styling</span>
-                    <strong>$70–90 • 1 hr</strong>
+                    <strong>$70–90<br />1 hr</strong>
                   </button>
                   <div class="service-desc">
                     A professional blowout and styling service using a blow
@@ -173,7 +190,7 @@
                 <li class="service-item">
                   <button class="service-toggle">
                     <span>Curl Awakening Service</span>
-                    <strong>$150 • 1.5 hr</strong>
+                    <strong>$150<br />1.5 hr</strong>
                   </button>
                   <div class="service-desc">
                     A curl-enhancing service for naturally curly or wavy hair.
@@ -181,18 +198,11 @@
                     care guidance.
                   </div>
                 </li>
-              </ul>
-            </div>
 
-            <!-- Chemical Services -->
-            <div class="card service-category">
-              <h3>Chemical Services</h3>
-
-              <ul class="price-list">
                 <li class="service-item">
                   <button class="service-toggle">
                     <span>Perm (Permanent Wave)</span>
-                    <strong>$300-350 · 3–5 hrs</strong>
+                    <strong>$300-$350<br />3-5 hrs</strong>
                   </button>
                   <div class="service-desc">
                     A permanent wave service designed to create long-lasting
@@ -204,7 +214,7 @@
                 <li class="service-item">
                   <button class="service-toggle">
                     <span>Perm Removal</span>
-                    <strong>$300 · 2.5–3 hrs</strong>
+                    <strong>$300<br />2.5-3 hrs</strong>
                   </button>
                   <div class="service-desc">
                     A perm removal service designed to soften or reverse a
@@ -222,7 +232,7 @@
                 <li class="service-item">
                   <button class="service-toggle">
                     <span>All-over Color</span>
-                    <strong>$180–250 · 2-3 hrs</strong>
+                    <strong>$180–250<br />2-3 hrs</strong>
                   </button>
                   <div class="service-desc">
                     A single-process color applied all over the hair. Not
@@ -233,7 +243,7 @@
                 <li class="service-item">
                   <button class="service-toggle">
                     <span>Blonding (Total Blonde)</span>
-                    <strong>$280–500 · 3–5 hrs ($90 per hour)</strong>
+                    <strong>$280–500<br />3–5 hrs <br />($90 per hour)</strong>
                   </button>
                   <div class="service-desc">
                     A full blonding service performed with protective and
@@ -246,7 +256,7 @@
                 <li class="service-item">
                   <button class="service-toggle">
                     <span>Root Blonding </span>
-                    <strong>$200–290 · 3–3.5 hrs ($90 per hour) </strong>
+                    <strong>$200–290<br />3–3.5 hrs<br />($90 per hour)</strong>
                   </button>
                   <div class="service-desc">
                     Root blonding with full-length toning. The service includes
@@ -259,7 +269,7 @@
                 <li class="service-item">
                   <button class="service-toggle">
                     <span>Root Retouch</span>
-                    <strong>$160–190 · 2 hrs</strong>
+                    <strong>$160–190<br />2 hrs</strong>
                   </button>
                   <div class="service-desc">
                     Root color retouch with optional toner to refresh the
@@ -270,14 +280,14 @@
 
                 <li class="service-item">
                   <button class="service-toggle">
-                    <span>Highlights / Balayage / Shatush / AirTouch </span>
-                    <strong>$390–450 · 3.5 –5 hrs </strong>
+                    <span>Highlights / Balayage / Shatush / AirTouch</span>
+                    <strong>$390–450<br />3.5 –5 hrs</strong>
                   </button>
                   <div class="service-desc">
                     Custom lightening techniques for dimensional,
                     natural-looking blonde results. This service includes
                     lightening selected sections, an express hair treatment, and
-                    toning. Haircut and adding a base (root) color between the
+                    toning. <br/>Haircut and adding a base (root) color between the
                     lightened sections are not included and are charged
                     separately, if needed.
                   </div>
@@ -286,11 +296,11 @@
                 <li class="service-item">
                   <button class="service-toggle">
                     <span>Partial or Face-Framing Highlights or AirTouch </span>
-                    <strong>$330–350 · 2.5–3.5 hrs </strong>
+                    <strong>$330–350<br />2.5–3.5 hrs</strong>
                   </button>
                   <div class="service-desc">
                     Targeted lightening in selected areas to refresh the look.
-                    Haircut and adding a base (root) color between the lightened
+                    <br/>Haircut and adding a base (root) color between the lightened
                     sections are not included and are charged separately, if
                     needed.
                   </div>
@@ -299,7 +309,7 @@
                 <li class="service-item">
                   <button class="service-toggle">
                     <span>Color Correction</span>
-                    <strong>$450–500 · 5+ hrs($90 per hour)</strong>
+                    <strong>$450–500<br />5+ hrs<br />($90 per hour)</strong>
                   </button>
                   <div class="service-desc">
                     Corrective color service to remove unwanted tones or
@@ -317,7 +327,7 @@
                 <li class="service-item">
                   <button class="service-toggle">
                     <span>Modifix – Amino Acid Hair Treatment</span>
-                    <strong>$450 · 4-5 hrs</strong>
+                    <strong>$450<br />4-5 hrs</strong>
                   </button>
                   <div class="service-desc">
                     An amino acid hair reconstruction treatment with results
@@ -329,7 +339,7 @@
                 <li class="service-item">
                   <button class="service-toggle">
                     <span>Vita-Lamination Organic Hair Treatment</span>
-                    <strong>$250 · 2–3 hrs</strong>
+                    <strong>$250<br />2–3 hrs</strong>
                   </button>
                   <div class="service-desc">
                     An intensive treatment that restores and seals the hair
@@ -340,7 +350,7 @@
                 <li class="service-item">
                   <button class="service-toggle">
                     <span>Spa Keratin or Boosters & Refillers</span>
-                    <strong>$180 · 2 hrs</strong>
+                    <strong>$180<br />2 hrs</strong>
                   </button>
                   <div class="service-desc">
                     Deep hair reconstruction and replenishment with essential
@@ -351,7 +361,7 @@
                 <li class="service-item">
                   <button class="service-toggle">
                     <span>Сonsultation & Scalp Analysis with Trichoscope </span>
-                    <strong>$70 · 30–40 min </strong>
+                    <strong>$70<br />30–40 min</strong>
                   </button>
                   <div class="service-desc">
                     Consultation and scalp analysis using a trichoscope.
@@ -363,7 +373,7 @@
                 <li class="service-item">
                   <button class="service-toggle">
                     <span>Scalp Peeling & Scalp Treatment</span>
-                    <strong>$90 · 40–50 min </strong>
+                    <strong>$90<br />40–50 min</strong>
                   </button>
                   <div class="service-desc">
                     A comprehensive scalp care service, performed after a
@@ -378,7 +388,7 @@
                 <li class="service-item">
                   <button class="service-toggle">
                     <span>Hair Detox </span>
-                    <strong>$80–100 · 45–60 min </strong>
+                    <strong>$80–100<br />45–60 min</strong>
                   </button>
                   <div class="service-desc">
                     A detox treatment for the hair length. Removes mineral and
@@ -390,6 +400,11 @@
               </ul>
             </div>
           </div>
+          <p style="color: var(--muted); margin-top: 6px">
+            Transparent pricing so you can choose the right service. Duration
+            and exact price depends on hair length and complexity — final price
+            confirmed during consultation.
+          </p>
         </section>
 
         <!-- GALLERY -->
@@ -429,8 +444,8 @@
         <!-- ABOUT -->
         <section id="about" aria-labelledby="about-title">
           <h2 id="about-title">Meet our team</h2>
-
-          <div class="about" style="margin-top: 12px">
+          <div class="about-divider"></div>
+          <div class="about about-left" style="margin-top: 12px">
             <img
               src="assets/anna-portrait.jpg"
               alt="Anna hairstylist portrait"
@@ -454,7 +469,9 @@
             </div>
           </div>
 
-          <div class="about" style="margin-top: 12px">
+          <div class="about-divider"></div>
+
+          <div class="about about-right" style="margin-top: 12px">
             <img
               src="assets/anya-portrait.jpg"
               alt="Anya hairstylist portrait"
@@ -479,6 +496,7 @@
               </p>
             </div>
           </div>
+          <div class="about-divider"></div>
         </section>
 
         <!-- REVIEWS -->
