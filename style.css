@@ -26,16 +26,14 @@ h1 {
   margin: 0 0 8px;
 }
 
-h2,h4 {
-  margin: 0 0 6px;
+h2,
+h3,
+h4 {
+  margin: 0 0 0.5rem 0;
 }
 
-p.lead {
-  color: var(--muted);
-  margin: 0 0 18px;
-}
 section {
-  padding: 20px 0;
+  margin: 1rem 0 1rem 0;
   border-top: 1px solid #f2f2f2;
 }
 a {
@@ -60,7 +58,7 @@ footer {
 .container {
   max-width: var(--maxw);
   margin: 0 auto;
-  padding: 24px;
+  padding: 1rem;
 }
 .nav {
   display: flex;
@@ -152,7 +150,7 @@ ul.price-list li {
 .lightbox {
   position: fixed;
   inset: 0;
-  background: rgba(0,0,0,0.85);
+  background: rgba(0, 0, 0, 0.85);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -201,10 +199,49 @@ ul.price-list li {
   align-items: flex-start;
 }
 
+.about-left {
+  flex-direction: row;
+}
+
+.about-right {
+  flex-direction: row-reverse;
+}
+
+.about-divider {
+  height: 1px;
+  margin: 28px 0;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(0, 0, 0, 0.08),
+    transparent
+  );
+}
+
+.about img {
+  width: 160px;
+  height: 160px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: var(--shadow);
+}
+
+.about h3 {
+  margin-top: 0;
+  margin-bottom: 6px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+
 /* Mobile layout */
 @media (max-width: 520px) {
   .about {
-    display: block; /* выключаем flex */
+    display: block;
+  }
+
+  .about-left,
+  .about-right {
+    flex-direction: initial;
   }
 
   .about img {
@@ -212,7 +249,6 @@ ul.price-list li {
     height: 120px;
     object-fit: cover;
     border-radius: 12px;
-
     float: left;
     margin: 0 12px 8px 0;
   }
@@ -226,21 +262,10 @@ ul.price-list li {
   .about h3 {
     margin-top: 0;
   }
-   .about p {
+  .about p {
     font-size: 14px;
     line-height: 1.5;
   }
-}
-
-
-
-
-.about img {
-  width: 160px;
-  height: 160px;
-  border-radius: 12px;
-  object-fit: cover;
-  box-shadow: var(--shadow);
 }
 
 .footer-div {
@@ -250,7 +275,6 @@ ul.price-list li {
   flex-wrap: wrap;
   gap: 12px;
 }
-
 
 /* little hover */
 .card:hover {
@@ -285,7 +309,6 @@ ul.price-list li {
   font-weight: bold;
   text-decoration: underline;
 }
-
 
 /* Gallery row */
 .gallery-wrapper {
@@ -334,7 +357,7 @@ ul.price-list li {
   top: 50%;
   transform: translateY(-50%);
   border: none;
-  background: rgba(0,0,0,0.55);
+  background: rgba(0, 0, 0, 0.55);
   color: white;
   font-size: 22px;
   width: 36px;
@@ -371,7 +394,7 @@ ul.price-list li {
   gap: 10px;
   padding: 10px 14px;
   border-radius: 10px;
-  background: var(--card-bg);;
+  background: var(--card-bg);
   color: inherit;
   box-shadow: var(--shadow);
   text-decoration: none;
@@ -385,7 +408,7 @@ ul.price-list li {
 .instagram-btn svg {
   width: 22px;
   height: 22px;
-  fill: #E1306C; /* Instagram pink */
+  fill: #e1306c; /* Instagram pink */
   flex-shrink: 0;
 }
 
@@ -396,7 +419,7 @@ ul.price-list li {
 
 .instagram-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
 }
 
 .instagram-link {
@@ -434,7 +457,7 @@ ul.price-list li {
 
 .service-toggle span {
   padding-right: 10px;
-  flex: 1
+  flex: 1;
 }
 
 .service-toggle strong {
@@ -446,7 +469,7 @@ ul.price-list li {
 
 .service-toggle::after {
   content: "▾";
-  font-size: 12px;
+  font-size: 1.5rem;
   margin-left: 8px;
   transition: transform 0.2s ease;
 }
@@ -474,6 +497,29 @@ ul.price-list li {
 ul.price-list li.service-item {
   display: block;
 }
+
+/* MOBILE SERVICES CAROUSEL */
+@media (max-width: 768px) {
+  #services .grid-3 {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    padding: 4px 12px 12px;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  #services .grid-3::-webkit-scrollbar {
+    display: none;
+  }
+
+  #services .service-category {
+    flex: 0 0 90%; /* UX: size reduced to see the next card */
+    scroll-snap-align: start;
+  }
+}
+
+/* Map embed */
 
 .map-embed iframe {
   width: 100%;
@@ -531,7 +577,7 @@ ul.price-list li.service-item {
   align-items: center;
   gap: 10px;
   text-decoration: none;
-  color: inherit;       
+  color: inherit;
 }
 
 /* responsive */
@@ -545,7 +591,6 @@ ul.price-list li.service-item {
   h1 {
     font-size: 28px;
   }
-  
 }
 @media (max-width: 520px) {
   .nav-links {
@@ -602,8 +647,12 @@ ul.price-list li.service-item {
   cursor: pointer;
 }
 
-.rev-btn.prev { left: 4px; }
-.rev-btn.next { right: 4px; }
+.rev-btn.prev {
+  left: 4px;
+}
+.rev-btn.next {
+  right: 4px;
+}
 
 /* mobile */
 @media (max-width: 520px) {
@@ -619,7 +668,6 @@ ul.price-list li.service-item {
   background: rgba(0, 0, 0, 0.03);
   border: 1px solid rgba(0, 0, 0, 0.06);
 }
-
 
 /* contact and booking section */
 .booking-layout {

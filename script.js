@@ -23,7 +23,7 @@ window.addEventListener("resize", adaptMobile);
 adaptMobile();
 
 // Gallery lightbox functionality
-const totalImages = 35;
+const totalImages = 43;
 const galleryEl = document.getElementById("gallery");
 
 // Load images automatically
