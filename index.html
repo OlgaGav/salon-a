@@ -503,28 +503,50 @@
         <section id="reviews" class="card">
           <h4>Feedback from Clients</h4>
 
-          <div class="reviews-slider">
-            <button class="rev-btn prev" aria-label="Previous review">‹</button>
+          <div class="reviews-strip">
+            <article class="review-img">
+              <img
+                src="./assets/reviews/review1.jpg"
+                alt="Instagram review screenshot"
+              />
+              <span class="review-source instagram">Instagram</span>
+            </article>
 
-            <div class="reviews-track">
-              <article class="review">
-                <p class="review-text">
-                  “ Amazing experience! Anna is very professional and
-                  attentive.”
-                </p>
-                <div class="review-author">— Maria, Google</div>
-              </article>
+            <article class="review-img">
+              <img
+                src="./assets/reviews/review2.jpg"
+                alt="Yelp review screenshot"
+              />
+              <span class="review-source yelp">Yelp</span>
+            </article>
 
-              <article class="review">
-                <p class="review-text">
-                  “Best haircut I’ve had in years. Highly recommend!”
-                </p>
-                <div class="review-author">— Julia, Instagram</div>
-              </article>
-            </div>
-
-            <button class="rev-btn next" aria-label="Next review">›</button>
+            <article class="review-img">
+              <img
+                src="./assets/reviews/review3.jpg"
+                alt="Yelp review screenshot"
+              />
+              <span class="review-source yelp">Yelp</span>
+            </article>
           </div>
+
+          <!-- Instagram Highlight CTA -->
+          <a
+            href="https://www.instagram.com/stories/highlights/17922199901759652/"
+            target="_blank"
+            rel="noopener"
+            class="reviews-cta"
+          >
+            <svg class="ig-icon" aria-hidden="true">
+              <use
+                href="./assets/icons.svg#icon-instagram"
+                xlink:href="./assets/icons.svg#icon-instagram"
+              ></use>
+            </svg>
+            <span>
+              See more reviews on Instagram
+              <strong>@anna_hairstylist_ba</strong>
+            </span>
+          </a>
         </section>
 
         <!-- FIND US AND LOCATION MAP -->
