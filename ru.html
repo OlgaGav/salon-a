@@ -129,8 +129,9 @@
             </a>
           </p>
         </section>
+        <div class="section-divider"></div>
 
-        <section id="contact" aria-labelledby="contact-title">
+        <section id="contact" aria-labelledby="contact-title" class="section">
           <h2 id="contact-title">Contact & Booking</h2>
 
           <div class="booking-layout">
@@ -211,9 +212,10 @@
             </div>
           </div>
         </section>
+        <div class="section-divider"></div>
 
         <!-- SERVICES & PRICING -->
-        <section id="services" aria-labelledby="services-title">
+        <section id="services" aria-labelledby="services-title" class="section">
           <h2 id="services-title">Services & Prices</h2>
 
           <div class="grid-3" style="margin-top: 18px">
@@ -483,9 +485,10 @@
             консультации.
           </p>
         </section>
+        <div class="section-divider"></div>
 
         <!-- GALLERY -->
-        <section id="portfolio" aria-labelledby="gallery-title">
+        <section id="portfolio" aria-labelledby="gallery-title" class="section">
           <h2 id="gallery-title">Портфолио</h2>
           <p style="color: var(--muted); margin-top: 6px">
             Примеры последних работ. Смотрите больше — в Instagram
@@ -516,9 +519,9 @@
             <button class="nav-btn next" id="lightbox-next">❯</button>
           </div>
         </section>
-
+        <div class="section-divider"></div>
         <!-- ABOUT -->
-        <section id="about" aria-labelledby="about-title">
+        <section id="about" aria-labelledby="about-title" class="section">
           <h2 id="about-title">Meet our team</h2>
           <div class="about-divider"></div>
           <div class="about about-left" style="margin-top: 12px">
@@ -574,93 +577,95 @@
           </div>
           <div class="about-divider"></div>
         </section>
-
+        <div class="section-divider"></div>
         <!-- REVIEWS -->
-        <section id="reviews" class="card">
-          <h4>Отзывы клиентов</h4>
+        <section id="reviews" class="section">
+          <div class="card">
+            <h4>Отзывы клиентов</h4>
 
-          <div class="reviews-strip">
-            <article class="review-img">
-              <img
-                src="./assets/reviews/review1.jpg"
-                alt="Instagram review screenshot"
-              />
-              <span class="review-source instagram">Instagram</span>
-            </article>
+            <div class="reviews-strip">
+              <article class="review-img">
+                <img
+                  src="./assets/reviews/review1.jpg"
+                  alt="Instagram review screenshot"
+                />
+                <span class="review-source instagram">Instagram</span>
+              </article>
 
-            <article class="review-img">
-              <img
-                src="./assets/reviews/review2.jpg"
-                alt="Yelp review screenshot"
-              />
-              <span class="review-source yelp">Yelp</span>
-            </article>
+              <article class="review-img">
+                <img
+                  src="./assets/reviews/review2.jpg"
+                  alt="Yelp review screenshot"
+                />
+                <span class="review-source yelp">Yelp</span>
+              </article>
 
-            <article class="review-img">
-              <img
-                src="./assets/reviews/review3.jpg"
-                alt="Yelp review screenshot"
-              />
-              <span class="review-source yelp">Yelp</span>
-            </article>
+              <article class="review-img">
+                <img
+                  src="./assets/reviews/review3.jpg"
+                  alt="Yelp review screenshot"
+                />
+                <span class="review-source yelp">Yelp</span>
+              </article>
+            </div>
+            <p class="social-proof">
+              Trusted by hundreds of clients across the Bay Area
+            </p>
+            <!-- Google Reviews CTA -->
+            <a
+              href="https://www.google.com/maps/place/Hair+Studio+A/@37.9457467,-122.063362,750m/data=!3m1!1e3!4m16!1m9!3m8!1s0x8085619b74ebb193:0xebc72d86d9baee3c!2sHair+Studio+A!8m2!3d37.9457425!4d-122.0607871!9m1!1b1!16s%2Fg%2F11ywx0_kmy!3m5!1s0x8085619b74ebb193:0xebc72d86d9baee3c!8m2!3d37.9457425!4d-122.0607871!16s%2Fg%2F11ywx0_kmy?entry=ttu&g_ep=EgoyMDI2MDEwNy4wIKXMDSoASAFQAw%3D%3D"
+              target="_blank"
+              rel="noopener"
+              class="reviews-cta google"
+            >
+              <svg class="google-icon" aria-hidden="true" viewBox="0 0 48 48">
+                <path
+                  fill="#4285F4"
+                  d="M24 9.5c3.4 0 6.4 1.2 8.8 3.3l6.6-6.6C35.4 2.3 30 0 24 0 14.6 0 6.4 5.4 2.6 13.2l7.8 6.1C12.3 13.3 17.7 9.5 24 9.5z"
+                />
+                <path
+                  fill="#34A853"
+                  d="M46.1 24.6c0-1.6-.1-2.7-.4-3.9H24v7.4h12.8c-.6 3-2.4 5.6-5.2 7.3l8 6.2c4.7-4.3 6.5-10.6 6.5-17z"
+                />
+                <path
+                  fill="#FBBC05"
+                  d="M10.4 28.3c-1-2.9-1-6 0-8.9l-7.8-6.1C-.6 18.5-.6 29.5 2.6 34.7l7.8-6.4z"
+                />
+                <path
+                  fill="#EA4335"
+                  d="M24 48c6 0 11.4-2 15.2-5.4l-8-6.2c-2.2 1.5-5.1 2.3-7.2 2.3-6.3 0-11.7-3.8-13.6-9.2l-7.8 6.4C6.4 42.6 14.6 48 24 48z"
+                />
+              </svg>
+
+              <span>
+                Читать проверенные отзывы из Google reviews
+                <strong>Hair Studio A · Pleasant Hill</strong>
+              </span>
+            </a>
+
+            <!-- Instagram Highlight CTA -->
+            <a
+              href="https://www.instagram.com/stories/highlights/17922199901759652/"
+              target="_blank"
+              rel="noopener"
+              class="reviews-cta"
+            >
+              <svg class="ig-icon" aria-hidden="true">
+                <use
+                  href="./assets/icons.svg#icon-instagram"
+                  xlink:href="./assets/icons.svg#icon-instagram"
+                ></use>
+              </svg>
+              <span>
+                Сморите больше отзывов в Instagram
+                <strong>@anna_hairstylist_ba</strong>
+              </span>
+            </a>
           </div>
-          <p class="social-proof">
-            Trusted by hundreds of clients across the Bay Area
-          </p>
-          <!-- Google Reviews CTA -->
-          <a
-            href="https://www.google.com/maps/place/Hair+Studio+A/@37.9457467,-122.063362,750m/data=!3m1!1e3!4m16!1m9!3m8!1s0x8085619b74ebb193:0xebc72d86d9baee3c!2sHair+Studio+A!8m2!3d37.9457425!4d-122.0607871!9m1!1b1!16s%2Fg%2F11ywx0_kmy!3m5!1s0x8085619b74ebb193:0xebc72d86d9baee3c!8m2!3d37.9457425!4d-122.0607871!16s%2Fg%2F11ywx0_kmy?entry=ttu&g_ep=EgoyMDI2MDEwNy4wIKXMDSoASAFQAw%3D%3D"
-            target="_blank"
-            rel="noopener"
-            class="reviews-cta google"
-          >
-            <svg class="google-icon" aria-hidden="true" viewBox="0 0 48 48">
-              <path
-                fill="#4285F4"
-                d="M24 9.5c3.4 0 6.4 1.2 8.8 3.3l6.6-6.6C35.4 2.3 30 0 24 0 14.6 0 6.4 5.4 2.6 13.2l7.8 6.1C12.3 13.3 17.7 9.5 24 9.5z"
-              />
-              <path
-                fill="#34A853"
-                d="M46.1 24.6c0-1.6-.1-2.7-.4-3.9H24v7.4h12.8c-.6 3-2.4 5.6-5.2 7.3l8 6.2c4.7-4.3 6.5-10.6 6.5-17z"
-              />
-              <path
-                fill="#FBBC05"
-                d="M10.4 28.3c-1-2.9-1-6 0-8.9l-7.8-6.1C-.6 18.5-.6 29.5 2.6 34.7l7.8-6.4z"
-              />
-              <path
-                fill="#EA4335"
-                d="M24 48c6 0 11.4-2 15.2-5.4l-8-6.2c-2.2 1.5-5.1 2.3-7.2 2.3-6.3 0-11.7-3.8-13.6-9.2l-7.8 6.4C6.4 42.6 14.6 48 24 48z"
-              />
-            </svg>
-
-            <span>
-              Читать проверенные отзывы из Google reviews
-              <strong>Hair Studio A · Pleasant Hill</strong>
-            </span>
-          </a>
-
-          <!-- Instagram Highlight CTA -->
-          <a
-            href="https://www.instagram.com/stories/highlights/17922199901759652/"
-            target="_blank"
-            rel="noopener"
-            class="reviews-cta"
-          >
-            <svg class="ig-icon" aria-hidden="true">
-              <use
-                href="./assets/icons.svg#icon-instagram"
-                xlink:href="./assets/icons.svg#icon-instagram"
-              ></use>
-            </svg>
-            <span>
-              Сморите больше отзывов в Instagram
-              <strong>@anna_hairstylist_ba</strong>
-            </span>
-          </a>
         </section>
-
+        <div class="section-divider"></div>
         <!-- FIND US AND LOCATION MAP -->
-        <section id="location">
+        <section id="location" class="section">
           <div class="card map-card">
             <h4>Как нас найти</h4>
 
@@ -721,7 +726,7 @@
         </section>
       </div>
     </main>
-
+    Í
     <footer>
       <div class="container footer-div">
         <div>© <strong>Hair studio A</strong> — Все права защищены</div>
