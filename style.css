@@ -75,13 +75,20 @@ footer {
 .logo {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 6px;
   font-weight: 700;
   font-size: 18px;
   color: var(--text);
 }
+.logo-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  object-fit: cover;
+  margin: 0 1rem 0 0;
+}
 .logo-name {
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 800;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -89,12 +96,7 @@ footer {
   white-space: nowrap;
   opacity: 0.85;
 }
-/* base — mobile first */
-@media (min-width: 480px) {
-  .logo-name {
-    font-size: 0.9rem;
-  }
-}
+
 /* small tablets / large phones */
 @media (min-width: 768px) {
   .logo-name {
@@ -112,6 +114,15 @@ footer {
 @media (min-width: 1280px) {
   .logo-name {
     font-size: 1.1rem;
+  }
+}
+@media (max-width: 520px) {
+  .logo {
+    gap: 4px;
+  }
+
+  .logo-img {
+     margin: 0;
   }
 }
 
