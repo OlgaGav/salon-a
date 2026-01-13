@@ -81,8 +81,8 @@ footer {
   color: var(--text);
 }
 .logo-name {
-  font-size: 0.8rem;
-  font-weight: 600;
+  font-size: 1rem;
+  font-weight: 800;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   line-height: 1;
@@ -275,26 +275,23 @@ ul.price-list li {
 }
 
 /* Mobile layout */
-/* @media (max-width: 520px) {
+@media (max-width: 520px) {
   .about {
     display: block;
-  }
-
-  .about-left {
-    flex-direction: row;
-  }
-
-  .about-right {
-    flex-direction: row-reverse;
   }
 
   .about img {
     width: 120px;
     height: 120px;
-    object-fit: cover;
-    border-radius: 12px;
     float: left;
     margin: 0 12px 8px 0;
+    border-radius: 12px;
+    object-fit: cover;
+  }
+
+  .about.about-right img {
+    float: right;
+    margin: 0 0 8px 12px;
   }
 
   .about::after {
@@ -310,7 +307,7 @@ ul.price-list li {
     font-size: 14px;
     line-height: 1.5;
   }
-} */
+}
 
 .footer-div {
   display: flex;
@@ -937,29 +934,10 @@ ul.price-list li.service-item {
   margin-bottom: 1rem;
   font-weight: 600;
   letter-spacing: 0.08em;
-  line-height: 1;
+  line-height: 1.15;
   opacity: 0.85;
 }
-/* base — mobile first */
-@media (min-width: 480px) {
-  .hero h1 {
-    font-size: 0.9rem;
-  }
-}
-/* small tablets / large phones */
-@media (min-width: 768px) {
-  .hero h1 {
-    font-size: 1rem;
-    letter-spacing: 0.06em;
-  }
-}
-/* laptops / desktop */
-@media (min-width: 1024px) {
-  .hero h1 {
-    font-size: 1.3rem;
-    letter-spacing: 0.05em;
-  }
-}
+
 @media (min-width: 1280px) {
   .hero h1 {
     font-size: 1.5rem;
