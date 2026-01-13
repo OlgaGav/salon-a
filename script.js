@@ -29,7 +29,7 @@ const galleryEl = document.getElementById("gallery");
 // Load images automatically
 for (let i = 1; i <= totalImages; i++) {
   const img = document.createElement("img");
-  img.src = `./assets/gallery/gallery${i}.jpg`;
+  img.src = `./assets/portfolio/portfolio${i}.jpg`;
   img.alt = `Portfolio image ${i}`;
   img.dataset.index = i;
   galleryEl.appendChild(img);
@@ -46,7 +46,7 @@ let currentIndex = 1;
 
 function openLightbox(index) {
   currentIndex = index;
-  lightboxImg.src = `./assets/gallery/gallery${index}.jpg`;
+  lightboxImg.src = `./assets/portfolio/portfolio${index}.jpg`;
   lightbox.classList.remove("hidden");
 }
 
