@@ -13,8 +13,7 @@
   box-sizing: border-box;
 }
 body {
-  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial;
+  font-family: 'Poppins', system-ui, -apple-system, sans-serif;
   margin: 0;
   color: var(--text);
   background: var(--bg);
@@ -36,6 +35,7 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
 header {
   position: sticky;
   top: 0;
@@ -44,12 +44,21 @@ header {
   z-index: 30;
   border-bottom: 1px solid #eee;
 }
+
 footer {
   padding: 28px 0;
   color: var(--muted);
   font-size: 14px;
   border-top: 1px solid #f7f7f7;
 }
+
+/* Breakpoints
+   xs: 520px
+   sm: 600px
+   md: 768px
+   lg: 900px
+   xl: 1024px
+*/
 
 .container {
   max-width: var(--maxw);
@@ -66,11 +75,58 @@ footer {
 .logo {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 6px;
   font-weight: 700;
   font-size: 18px;
   color: var(--text);
 }
+.logo-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  object-fit: cover;
+  margin: 0 1rem 0 0;
+}
+.logo-name {
+  font-size: 0.9rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  line-height: 1;
+  white-space: nowrap;
+  opacity: 0.85;
+}
+
+/* small tablets / large phones */
+@media (min-width: 768px) {
+  .logo-name {
+    font-size: 1rem;
+    letter-spacing: 0.06em;
+  }
+}
+/* laptops / desktop */
+@media (min-width: 1024px) {
+  .logo-name {
+    font-size: 1.05rem;
+    letter-spacing: 0.05em;
+  }
+}
+@media (min-width: 1280px) {
+  .logo-name {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 520px) {
+  .logo {
+    gap: 4px;
+  }
+
+  .logo-img {
+     margin: 0;
+  }
+}
+
+
 .nav-links {
   display: flex;
   gap: 18px;
@@ -235,21 +291,18 @@ ul.price-list li {
     display: block;
   }
 
-  .about-left {
-    flex-direction: row;
-  }
-  
-  .about-right {
-    flex-direction: row-reverse;
-  }
-
   .about img {
     width: 120px;
     height: 120px;
-    object-fit: cover;
-    border-radius: 12px;
     float: left;
     margin: 0 12px 8px 0;
+    border-radius: 12px;
+    object-fit: cover;
+  }
+
+  .about.about-right img {
+    float: right;
+    margin: 0 0 8px 12px;
   }
 
   .about::after {
@@ -588,7 +641,7 @@ ul.price-list li.service-item {
     grid-template-columns: repeat(2, 1fr);
   }
   h1 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 }
 @media (max-width: 520px) {
@@ -861,7 +914,8 @@ ul.price-list li.service-item {
 }
 
 
-.hero {
+.hero,
+.about-card {
   position: relative;
   text-align: left;
   margin: 2rem 0;
@@ -889,29 +943,16 @@ ul.price-list li.service-item {
 .hero h1 {
   margin-top: 0;
   margin-bottom: 1rem;
-  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  line-height: 1.15;
+  opacity: 0.85;
 }
 
-.hero p {
-  margin-left: 0;
-  margin-right: 0;
-}
-
-.hero-sub {
-  max-width: 760px;
-  margin: 0 auto 14px;
-  color: var(--muted);
-}
-
-.hero-location {
-  max-width: 760px;
-  margin: 0 auto 20px;
-  font-size: 14px;
-  color: var(--muted);
-}
-
-.hero .cta {
-  align-self: flex-start;
+@media (min-width: 1280px) {
+  .hero h1 {
+    font-size: 1.5rem;
+  }
 }
 
 .reviews-cta.google {
@@ -923,7 +964,6 @@ ul.price-list li.service-item {
   height: 22px;
   flex-shrink: 0;
 }
-
 
 
 .section {
@@ -954,4 +994,14 @@ ul.price-list li.service-item {
     rgba(0, 0, 0, 0.08),
     transparent
   );
+}
+
+@media (max-width: 600px) {
+  .section.soft-top::before {
+    height: 20px;
+    top: -20px;
+  }
+  .section-divider {
+    margin: 1rem 0;
+  }
 }
